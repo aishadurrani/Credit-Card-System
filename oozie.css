@@ -1,0 +1,797 @@
+body {
+
+	background-color: #026873;
+    background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
+    linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
+    linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
+    linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
+    background-size: 13px, 29px, 37px, 53px;
+	
+	
+	
+
+
+}
+
+
+
+.jumbotron {
+
+	background-color: #026873;
+	
+
+
+}
+
+
+
+h1 {
+	text-align: center;
+	font-size: 75px;
+	font-family: fantasy;
+	color: #20B2AA;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+h2 {
+	text-align: center;
+	font-size: 40px;
+	font-family: fantasy;
+	color: #20B2AA;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+h3 {
+	text-align: center;
+	font-size: 35px;
+	font-family: fantasy;
+	color: #20B2AA;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+h4 {
+	text-align: left;
+	font-size: 30px;
+	font-family: fantasy;
+	color: #026873;
+	text-decoration: underline;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+
+h5 {
+	text-align: left;
+	font-size: 30px;
+	font-family: fantasy;
+	color: #026873;
+	text-decoration: underline;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+h6 {
+	text-align: left;
+	font-size: 20px;
+	font-family: fantasy;
+	color: #026873;
+	text-decoration: underline;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+.btn  {
+	
+
+		float: left;
+		font-size: 16px;
+		width: 100%;
+		display: inline-block;
+		font-family: fantasy;
+		color: #20B2AA;
+		background-color: #026873;
+		text-align: center;
+		text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+
+
+}
+
+#button {
+	width: 12.5%;
+}
+
+
+
+.btn:hover {
+
+	background-color: #20B2AA;
+	color: #026873;
+}
+
+
+
+
+
+.card-header {
+	text-align: center;
+	font-size: 35px;
+	font-family: fantasy;
+	color: #20B2AA;
+	text-decoration: underline;
+	background-color: #026873;
+		text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+
+	
+	
+}
+
+
+
+
+
+
+.card-body {
+	background-color: white; 
+	font-family: Georgia, serif;
+	font-size: 16px;
+	color: black;
+}
+
+.card-image1 {
+	padding-right: 10%;
+	padding-left: 10%;
+	height: 800px;
+	width: 100%;
+}
+
+
+.card-image2 {
+	padding-right: 10%;
+	padding-left: 10%;
+	height: 800px;
+	width: 100%;
+}
+
+.card-image3 {
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 340px;
+	width: 100%;
+}
+
+.card-image4 {
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 340px;
+	width: 100%;
+}
+
+
+.card-image5 {
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 340px;
+	width: 100%;
+}
+
+
+.card-image6 {
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 340px;
+	width: 100%;
+}
+
+.card-image7 {
+	padding-right: 10%;
+	padding-left: 10%;
+	height: 500px;
+	width: 100%;
+}
+
+.card-image8 {
+    padding-right: 5%;
+	padding-left: 5%;
+	height: 100px;
+	width: 100%;
+}
+
+.card-image9 {
+	
+	padding-right: 5%;
+	padding-left: 5%;
+	height: 230px;
+	width: 100%;
+}
+
+
+.card-image10 {
+
+
+	padding-right: 5%;
+	padding-left: 5%;
+	height: 100px;
+	width: 100%;
+	
+	
+}
+
+.card-image11 {
+
+
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 310px;
+	width: 100%;
+
+}
+
+.card-image12 {
+
+
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 310px;
+	width: 100%;
+
+}
+
+.card-image13 {
+
+
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 310px;
+	width: 100%;
+
+}
+
+.card-image14 {
+
+
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 310px;
+	width: 100%;
+
+}
+
+.card-image15 {
+	padding-right: 10%;
+	padding-left: 10%;
+	height: 500px;
+	width: 100%;
+}
+
+.card-image16 {
+	padding-right: 10%;
+	padding-left: 10%;
+	height: 800px;
+	width: 100%;
+}
+
+
+.card-image17 {
+	padding-right: 10%;
+	padding-left: 10%;
+	height: 800px;
+	width: 100%;
+}
+
+
+.card-image18 {
+    padding-right: 5%;
+	padding-left: 5%;
+	height: 100px;
+	width: 100%;
+}
+
+.card-image19 {
+	
+	padding-right: 5%;
+	padding-left: 5%;
+	height: 230px;
+	width: 100%;
+}
+
+
+.card-image20 {
+
+
+	padding-right: 5%;
+	padding-left: 5%;
+	height: 100px;
+	width: 100%;
+	
+	
+}
+
+
+
+
+.card-image21 {
+	padding-right: 30%;
+	padding-left: 30%;
+	height: 50px;
+	width: 100%;
+}
+
+
+
+
+
+.text {
+	font-family: Georgia, serif;
+	color: black;
+	font-size: 16px;
+}
+
+
+
+
+
+footer {
+	font-size: 18px;
+	font-family: fantasy;
+	color: #20B2AA;
+	font-weight: bold;
+	margin-top: 60px;
+	padding-bottom: 10px;
+	position: static;
+   	left: 0;
+   	bottom: 0;
+   	height: 40px;
+   	width: 100%;
+   	text-align: center;
+   	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+
+
+	h1 {
+	text-align: center;
+	font-size: 75px;
+	font-family: fantasy;
+	color: #20B2AA;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+h2 {
+	text-align: center;
+	font-size: 35px;
+	font-family: fantasy;
+	color: #20B2AA;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+h3 {
+	text-align: center;
+	font-size: 30px;
+	font-family: fantasy;
+	color: #20B2AA;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+h4 {
+	text-align: left;
+	font-size: 30px;
+	font-family: fantasy;
+	color: #026873;
+	text-decoration: underline;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+
+h5 {
+	text-align: left;
+	font-size: 30px;
+	font-family: fantasy;
+	color: #026873;
+	text-decoration: underline;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+h6 {
+	text-align: left;
+	font-size: 30px;
+	font-family: fantasy;
+	color: #026873;
+	text-decoration: underline;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+.btn  {
+	
+
+		float: left;
+		font-size: 17px;
+		width: 100%;
+		display: inline-block;
+		font-family: fantasy;
+		color: #20B2AA;
+		background-color: #026873;
+		text-align: center;
+		text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+
+
+}
+
+#button {
+	position: static;
+	float: left;
+	font-size: 21px;
+	font-family: fantasy;
+	text-align: center;
+	font-weight: bold;
+	width: 25%; 
+	display:block;
+	padding-bottom: 10px;
+
+
+}
+
+
+
+.btn:hover {
+
+	background-color: #20B2AA;
+	color: #026873;
+}
+
+
+
+
+
+.card-header {
+	text-align: center;
+	font-size: 35px;
+	font-family: fantasy;
+	color: #20B2AA;
+	text-decoration: underline;
+	background-color: #026873;
+		text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+
+	
+	
+}
+
+
+
+
+
+
+.card-body {
+	background-color: white; 
+	font-family: Open Sans;
+	font-size: 22px;
+	color: black;
+}
+
+.card-image1 {
+	padding-right: 10%;
+	padding-left: 10%;
+	height: 800px;
+	width: 100%;
+}
+
+
+.card-image2 {
+	padding-right: 10%;
+	padding-left: 10%;
+	height: 800px;
+	width: 100%;
+}
+
+.card-image3 {
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 320px;
+	width: 100%;
+}
+
+.card-image4 {
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 320px;
+	width: 100%;
+}
+
+
+.card-image5 {
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 320px;
+	width: 100%;
+}
+
+
+.card-image6 {
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 320px;
+	width: 100%;
+}
+
+.card-image7 {
+	padding-right: 10%;
+	padding-left: 10%;
+	height: 500px;
+	width: 100%;
+}
+
+.card-image8 {
+    padding-right: 5%;
+	padding-left: 5%;
+	height: 100px;
+	width: 100%;
+}
+
+.card-image9 {
+	
+	padding-right: 5%;
+	padding-left: 5%;
+	height: 230px;
+	width: 100%;
+}
+
+
+.card-image10 {
+
+
+	padding-right: 5%;
+	padding-left: 5%;
+	height: 100px;
+	width: 100%;
+	
+	
+}
+
+.card-image11 {
+
+
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 320px;
+	width: 100%;
+
+}
+
+.card-image12 {
+
+
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 320px;
+	width: 100%;
+
+}
+
+.card-image13 {
+
+
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 320px;
+	width: 100%;
+
+}
+
+.card-image14 {
+
+
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 320px;
+	width: 100%;
+
+}
+
+.card-image15 {
+	padding-right: 10%;
+	padding-left: 10%;
+	height: 500px;
+	width: 100%;
+}
+
+.card-image16 {
+	padding-right: 10%;
+	padding-left: 10%;
+	height: 800px;
+	width: 100%;
+}
+
+
+.card-image17 {
+	padding-right: 10%;
+	padding-left: 10%;
+	height: 800px;
+	width: 100%;
+}
+
+
+.card-image18 {
+    padding-right: 5%;
+	padding-left: 5%;
+	height: 100px;
+	width: 100%;
+}
+
+.card-image19 {
+	
+	padding-right: 5%;
+	padding-left: 5%;
+	height: 230px;
+	width: 100%;
+}
+
+
+.card-image20 {
+
+
+	padding-right: 5%;
+	padding-left: 5%;
+	height: 100px;
+	width: 100%;
+	
+	
+}
+
+
+
+
+.card-image21 {
+	padding-right: 30%;
+	padding-left: 30%;
+	height: 50px;
+	width: 100%;
+}
+
+
+
+
+
+.text {
+	font-family: Open Sans;
+	color: black;
+	font-size: 22px;
+}
+
+
+
+
+
+footer {
+	font-size: 25px;
+	font-family: fantasy;
+	color: #20B2AA;
+	font-weight: bold;
+	margin-top: 60px;
+	padding-bottom: 10px;
+	position: static;
+   	left: 0;
+   	bottom: 0;
+   	height: 40px;
+   	width: 100%;
+   	text-align: center;
+   	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+   
+
+
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+
+
+

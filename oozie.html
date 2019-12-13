@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="oozie.css">
+
+	
+	
+	<title>Oozie</title>
+
+</head>
+
+<header>
+
+	<div class="header">
+		<div class="container">
+			<div class="jumbotron">
+
+	 			<h1><strong>Oozie</strong></h1>
+	 			
+
+			</div>
+		
+
+			
+			<nav>
+				
+					<a href="index.html"><button id="button" type="button" class="btn btn-secondary">Home</button></a>
+
+
+					<a href="method.html"><button id="button" type="button" class="btn btn-secondary">Method</button></a>
+
+
+					<a href="sql.html"><button id="button" type="button" class="btn btn-secondary">RDBMS - SQL</button></a>
+							
+					
+					
+					<a href="java.html"><button id="button" type="button" class="btn btn-secondary">Java</button></a>
+							
+				
+
+					<a href="hive.html"><button id="button" type="button" class="btn btn-secondary">Hive</button></a>
+							
+				
+
+					<a href="sqoop.html"><button id="button" type="button" class="btn btn-secondary">Sqoop</button></a>
+
+				
+
+					<a href="oozie.html"><button id="button" type="button" class="btn btn-secondary">Oozie</button></a>
+
+
+					<a href="datavisual.html"><button id="button" type="button" class="btn btn-secondary">Visualization</button></a>
+				
+			</nav>
+		</div>
+	 </div> 
+
+
+	</header>
+
+
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+	
+	<body>
+				
+
+
+			<div class="container">
+			
+			<div class="card">
+  				<h2 class="card-header">Automation & Optimization Process with Oozie</h2>
+  					<div class="card-body">
+    			
+   					 <p class="text">Oozie is a workflow scheduler system that manages Apache Hadoop jobs.  It is an open source framework.  Oozie supports jobs in Map Reduce, Hive and HDFS.  Oozie Coordinator jobs are recurrent Oozie Workflow jobs triggered by time (frequency) and data availability. 
+   					 </p>
+
+   					 <br>
+   					
+					 <p class="text">The main purpose of using Oozie is to manage different type of jobs being processed in Hadoop system. Dependencies between jobs are specified by a user in the form of Directed Acyclic Graphs. Oozie consumes this information and takes care of their execution in the correct order as specified in a workflow.</p>
+
+   					 <br>
+   				
+
+   					 <p class="text"><u>It consists of two parts:</u></p>
+   					 	<br>
+   					
+
+					<p class="text">1. Workflow engine: Responsibility of a workflow engine is to store and run workflows composed of Hadoop jobs e.g., MapReduce, Hive.
+					</p>
+
+						<br>
+						
+					<p class="text">2. Coordinator engine: It runs workflow jobs based on predefined schedules and availability of data.
+						Oozie is scalable and can manage the timely execution of thousands of workflows (each consisting of dozens of jobs) in a Hadoop cluster.
+					</p>
+
+
+
+
+   					 <br>
+   					 <br>
+   					 <br>
+
+
+   					 <h4>Process</h4>
+
+   					 <br>
+   					 <br>
+
+   					 <p class="text">Our Credit Card System consists of 2 processes.
+
+   					 <br>
+   					 <br>
+
+   					 1. Process Automation
+
+   					 <br>
+
+   					 2. Process Optimization</p>
+
+   					 <br>
+   					 <br>
+
+
+   					 <h4>< Process Automation ></h4>
+
+   					 <br>
+   					 <br>
+
+   					 <p class="text">In this process we
+
+   					 <br>
+   					 <br> 
+
+   					 1. Created an Oozie Workflow that will automate the processes of Data Extraction and Transportation with Sqoop and Data Loading with Hive.
+					
+
+					<br>
+					<br>
+
+					NOTE: Each file in Data Extraction and Transportation with Sqoop is deleted before the workflow is executed in order to prevent storage of redundant data.   The tables created in Data Loading with Hive should be dropped before executing the hive workflow in order to prevent redundancy.
+
+					</p>
+
+
+					<br>
+					<br>
+
+
+					<p class="text"><ul>2. Incorporated a workflow into an Oozie Coordinator that will execute with the following conditions:</ul>
+
+					<br>
+					
+
+					<li>Every weekday between 08:00 and 18:00 EST</li>
+					<li>Executes once every 20 minutes</li>
+					<li>Starts today Date for example start on Jan 22nd 2019 at 08:00 EST</li>
+					<li>Ends on March 29th 2025 at 18:00 EST</li>
+
+					</p>
+
+					<br>
+					<br>
+
+					<p class="text">Following is a breakdown of Sqoop Import in Oozie.
+					</p>
+
+					<br>
+					<br>
+
+
+					<div class="container">
+
+
+						 <div class="row">
+
+   								 <div class="col">
+   								 	
+
+					 			   	   <p class="text"><h6>Sqoop Import Branch Node</h6>
+
+					 				    <br>
+
+     									     <img class="card-image3" src="oozies1.png" alt="Oozie1">
+
+
+   								 </div>
+
+
+    							 <div class="col">
+
+    							 	   <p class="text"><h6>Sqoop Import Credit Card Node</h6>
+
+    							 	   <br>
+
+     								     	<img class="card-image4" src="oozies2.png" alt="Oozie2">	
+
+     									
+    							 </div>
+ 						  </div>
+
+   				</div>	
+
+					
+				<br>
+				<br>
+
+
+				<div class="container">
+
+
+						 <div class="row">
+
+   								 <div class="col">
+   								 	
+
+					 			   	   <p class="text"><h6>Sqoop Import Time Node</h6>
+
+					 				    <br>
+
+     									     <img class="card-image4" src="oozies3.png" alt="Oozie3">
+
+
+   								 </div>
+
+
+    							 <div class="col">
+
+    							 	   <p class="text"><h6>Sqoop Import Customer Node</h6>
+
+    							 	   <br>
+
+     								     	<img class="card-image5" src="oozies4.png" alt="Oozie4">	
+
+     									
+    							 </div>
+ 						  </div>
+
+   				</div>	
+
+					
+				<br>
+				<br>
+
+
+				<div class="container">
+
+
+						 <div class="row">
+
+
+    							 <div class="col">
+
+    							 	   <p class="text"><h6>Hive Import Nodes</h6>
+
+    							 	   <br>
+
+     								     	<img class="card-image7" src="oozieh1.png" alt="Oozie5">	
+
+     									
+    							 </div>
+ 						  </div>
+
+   				</div>	
+
+					
+				<br>
+				<br>
+
+				<p class="text">NOTE: Each Node starts off with an < Action Name > and ends with an  < Ok To >.   This is in an indication of completion.   If that node is not properly executed or runs an error, the error message of "fail_job" will be thrown instead of proceeding to the next node.
+				</p>
+
+				<br>
+				<br>
+				<br>
+
+
+  
+    							 	
+				
+				  <!-- Large modal -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target= "#modal1">Click to view complete Process Automation Workflow</button>
+
+						<div id="modal1" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  								<div class="modal-dialog modal-lg">
+   					   				 <div class="modal-content">
+   					   				 	<div class ="modal-header"><h4 class='col-12 modal-title text-center'>Process Automation Workflow</h4></div>
+   					   				 		<div class ="modal-body">
+
+
+
+   										 <p class="text">
+
+   					 	 						<img class="card-image1" src="ooziewf1.png" alt="Oozie6">
+
+
+   					 	 						<img class="card-image2" src="ooziewf2.png" alt="Oozie7">
+
+   										 </p>
+      
+   				 					</div>
+  								</div>
+  							</div>
+						</div>
+
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+
+
+
+   					  <p class="text"><h6>Oozie Job Properties file.</h6>
+
+   					</p>
+
+   					  <br>
+   					
+
+
+   					  <p class="text">
+
+   					 	 <img class="card-image8" src="job1.png" alt="Oozie8">
+
+   					</p>
+
+   					  <br>
+   					  <br>
+
+
+   					  <p class="text"><h6>Oozie Schedular file.</h6>
+
+   					</p>
+
+
+   					 	 <img class="card-image9" src="scheduler.png" alt="Oozie9">
+
+   					</p>
+
+   					  <br>
+   					  <br>
+
+   					  <p class="text"><h6>Oozie Coordinator file.</h6>
+
+
+   					 	 <img class="card-image10" src="coordinator.png" alt="Oozie10">
+
+   					</p>
+
+   					  <br>
+   					  <br>
+   					  <br>
+
+   					 <h4>< /Process Automation ></h4>
+
+   					 <br>
+   					 <br>
+   					 <br>
+
+
+
+   					 <h4>< Process Optimization ></h4>
+
+   					 <br>
+   					 <br>
+
+   					 <p class="text">In this process we
+
+   					 <br>
+   					 <br> 
+
+   					 1. Drop all tables from Process Automation, and delete their directories to prevent redundant storage of data and conflicting structure. Recreate all tables so that they have no partitions.
+   					 </p>
+
+
+					<br>
+					<br>
+
+
+					<p class="text">2. Create a new Oozie workflow similar to the process of Process Automation. This time, however, Sqoop and Hive should only import new data.Original data should not be deleted in this sqoop/hive process.
+
+					<br>
+					<br>
+
+					<p class="text">3. Modify the Oozie Coordinator to use this workflow rather than the original, unoptimized, workflow.
+					</p>
+
+
+					<br>
+					<br>
+
+
+					<p class="text">Following is a breakdown of Sqoop Update in Oozie.
+					</p>
+
+					<br>
+					<br>
+
+
+					<div class="container">
+
+
+						 <div class="row">
+
+   								 <div class="col">
+   								 	
+
+					 			   	   <p class="text"><h6>Sqoop Branch Update Node</h6>
+
+					 				    <br>
+
+     									     <img class="card-image11" src="oozieu1.png" alt="Oozie11">
+
+
+   								 </div>
+
+
+    							 <div class="col">
+
+    							 	   <p class="text"><h6>Sqoop Credit Card Update Node</h6>
+
+    							 	   <br>
+
+     								     	<img class="card-image12" src="oozieu2.png" alt="Oozie12">	
+
+     									
+    							 </div>
+ 						  </div>
+
+   				</div>	
+
+					
+				<br>
+				<br>
+
+
+				<div class="container">
+
+
+						 <div class="row">
+
+   								 <div class="col">
+   								 	
+
+					 			   	   <p class="text"><h6>Sqoop Time Update Node</h6>
+
+					 				    <br>
+
+     									     <img class="card-image13" src="oozieu3.png" alt="Oozie13">
+
+
+   								 </div>
+
+
+    							 <div class="col">
+
+    							 	   <p class="text"><h6>Sqoop Customer Update Node</h6>
+
+    							 	   <br>
+
+     								     	<img class="card-image14" src="oozieu4.png" alt="Oozie14">	
+
+     									
+    							 </div>
+ 						  </div>
+
+   				</div>	
+
+					
+				<br>
+				<br>
+
+
+				<div class="container">
+
+
+						 <div class="row">
+
+
+    							 <div class="col">
+
+    							 	   <p class="text"><h6>Hive Update Nodes</h6>
+
+    							 	   <br>
+
+     								     	<img class="card-image15" src="oozieh2.png" alt="Oozie15">	
+
+     									
+    							 </div>
+ 						  </div>
+
+   				</div>	
+
+					
+				<br>
+				<br>
+
+				<p class="text">NOTE: Each Node starts off with an < Action Name > and ends with an  < Ok To >.   This is in an indication of completion.   If that node is not properly executed or runs an error, the error message of "fail_job" will be thrown instead of proceeding to the next node.
+				</p>
+
+				<br>
+				<br>
+				<br>
+
+    							 	
+				
+				  <!-- Large modal -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target= "#modal2">Click to view complete Process Optimization Workflow</button>
+
+						<div id="modal2" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  								<div class="modal-dialog modal-lg">
+   					   				 <div class="modal-content">
+
+   					   				 	<div class ="modal-header"><h4 class='col-12 modal-title text-center'>Process Optimization Workflow</h4></div>
+   					   				 		<div class ="modal-body">
+
+
+
+   										 <p class="text">
+
+   					 	 						<img class="card-image16" src="ooziewf3.png" alt="Oozie16">
+
+
+   					 	 						<img class="card-image17" src="ooziewf4.png" alt="Oozie17">
+
+   										 </p>
+
+
+
+   										
+   									</div>
+  								</div>
+  							</div>
+						</div>
+
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+
+
+
+   					  <p class="text"><h6>Oozie Job Properties file 2.</h6>
+
+   					</p>
+
+   					  <br>
+   					
+
+
+   					  <p class="text">
+
+   					 	 <img class="card-image18" src="job2.png" alt="Oozie18">
+
+   					</p>
+
+   					  <br>
+   					  <br>
+
+
+   					  <p class="text"><h6>Oozie Schedular file 2.</h6>
+
+   					</p>
+
+
+   					 	 <img class="card-image19" src="scheduler2.png" alt="Oozie19">
+
+   					</p>
+
+   					  <br>
+   					  <br>
+
+   					  <p class="text"><h6>Oozie Coordinator file 2.</h6>
+
+
+   					 	 <img class="card-image20" src="coordinator2.png" alt="Oozie20">
+
+   					</p>
+
+   					  <br>
+   					  <br>
+   					  <br>
+
+   					 <h4>< /Process Optimization ></h4>
+
+   					 <br>
+   					 <br>
+   					 <br>
+   			         <br>
+   			  
+
+
+
+					<p class="text">
+
+   					 	 <img class="card-image21" src="oozie.png" alt="Oozie">
+
+   					</p>
+
+   					  <br>
+   					  <br>
+   					  <br>
+   					  <br>
+
+
+
+
+
+
+
+										
+			    </div>
+			</div>
+		</div>
+
+
+		
+
+
+
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
+	
+			
+
+					
+
+
+</body>
+
+
+	<footer>Aisha Durrani - PBPS</footer>
+
+
+
+
+</html>

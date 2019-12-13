@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="sqoop.css">
+
+	
+	
+	<title>Sqoop</title>
+
+</head>
+
+<header>
+
+	<div class="header">
+		<div class="container">
+			<div class="jumbotron">
+
+	 			<h1><strong>Sqoop</strong></h1>
+	 			
+
+			</div>
+		
+
+			
+			<nav>
+				
+
+
+					<a href="index.html"><button id="button" type="button" class="btn btn-secondary">Home</button></a>
+
+
+					<a href="method.html"><button id="button" type="button" class="btn btn-secondary">Method</button></a>
+
+
+					<a href="sql.html"><button id="button" type="button" class="btn btn-secondary">RDBMS - SQL</button></a>
+							
+					
+					
+					<a href="java.html"><button id="button" type="button" class="btn btn-secondary">Java</button></a>
+							
+				
+
+					<a href="hive.html"><button id="button" type="button" class="btn btn-secondary">Hive</button></a>
+							
+				
+
+					<a href="sqoop.html"><button id="button" type="button" class="btn btn-secondary">Sqoop</button></a>
+
+				
+
+					<a href="oozie.html"><button id="button" type="button" class="btn btn-secondary">Oozie</button></a>
+
+
+					<a href="datavisual.html"><button id="button" type="button" class="btn btn-secondary">Visualization</button></a>
+				
+				
+			</nav>
+		</div>
+	 </div> 
+
+
+	</header>
+
+
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+	
+	<body>
+				
+
+
+			<div class="container">
+			
+			<div class="card">
+  				<h2 class="card-header">Data Extraction and Transformation - ETL</h2>
+  					<div class="card-body">
+    			
+   					 <p class="text">
+   					 	<h5>Data Extraction and Transportation with Sqoop:</h5> </p>
+
+   					 	<br>
+   					 	<br>
+
+   					 <p class="text">Apache Sqoop is a tool designed for efficiently transferring bulk data between Apache Hadoop and structured datastores such as relational databases. 
+   					 <br>
+   					 <br>
+   					 Sqoop (SQL-to-Hadoop) is a big data tool that offers the capability to extract data from non-Hadoop data stores, transform the data into a form usable by Hadoop, and then load the data into HDFS.   Sqoop uses MapReduce framework to import and export the data, which provides parallel mechanism as well as fault tolerance.
+   					 <br>
+   					 <br>
+   					 Sqoop makes developers life easy by providing command line interface.  This process is called ETL, for Extract, Transform, and Load.
+   					</p>
+
+
+   					<br>
+   					<br>
+   					<br>
+
+
+   					<p class="text">Sqoop is used as a third step in our case study to successfully transfer data from our Database into Hadoop.  Sqoop will also be used again as a sixth step but this time extract only new or modified data from our database.
+   					</p>
+
+   					<br>
+   					<br>
+   					<br>
+
+
+   					<h5>< Part One of Sqoop ></h5>
+
+   					<br>
+   					<br>
+   					<br> 
+
+
+   					<p class="text">As previously stated we use Sqoop to Extract, Transform and Load data based on requirements.  Following are the 4 initial Sqoop-Boundary Queries and a breakdown on what is being done.</p>
+
+   					<br>
+   					<br>
+
+   					<p class="text">1. The first command in this query indicates the connector jdbc:mysql and a command to transfer our database //localhost/cdw_sapp.  Sqoop connectors allow Sqoop to overcome the differences in SQL dialects supported by various databases along with providing optimized data transfer. A connector is a pluggable piece that is used to fetch metadata about transferred data (columns, associated data types, …) and to drive the data transfer itself in the most efficient manner. The most basic connector that is shipped with Sqoop is called Generic JDBC Connector and, as the name suggests, it’s using only the JDBC interface for accessing metadata and transferring data.</p>
+
+   					<br>
+   					<br>
+
+   					<p class="text" style="color: #556B2F;">--connect jdbc:mysql://localhost/cdw_sapp</p>
+
+   					<br>
+   					<br>
+
+   					<p class="text">2. Second command we connect the driver, The word driver in Sqoop refers to a JDBC Driver.</p>
+
+   					<br>
+   					<br>
+
+   					<p class="text" style="color: #556B2F;">--driver com.mysql.jdbc.Driver</p>
+
+   					<br>
+   					<br>
+
+   					<p class="text">3. Third command is the actual query with its location.</p>
+
+   					<br>
+   					<br>
+
+   					<p class="text" style="color: #556B2F;">--query "SELECT BRANCH_CODE, BRANCH_NAME, BRANCH_STREET, BRANCH_CITY, BRANCH_STATE, IF(BRANCH_ZIP = NULL, 999999, BRANCH_ZIP) AS BRANCH_ZIP, CONCAT('(', SUBSTRING(BRANCH_PHONE, 1, 3), ')', SUBSTRING(BRANCH_PHONE, 4, 3), '-', SUBSTRING(BRANCH_PHONE, 7, 4)) AS PHONE_NUMBER, LAST_UPDATED
+					   FROM cdw_sapp_branch WHERE \$CONDITIONS"
+                  <br>
+                  <br>
+                  --query "SELECT TRANSACTION_ID, CREDIT_CARD_NO, CUST_SSN, DATE_FORMAT(CONCAT(year, '-', month, '-', day), GET_FORMAT(DATE, 'INTERNAL')) AS TIMEID, BRANCH_CODE, TRANSACTION_TYPE, TRANSACTION_VALUE, LAST_UPDATED
+                   FROM cdw_sapp_creditcard WHERE \$CONDITIONS"
+                  <br>
+                  <br>
+                  --query "SELECT DATE_FORMAT(CONCAT(year, '-', month, '-', day), GET_FORMAT(DATE, 'INTERNAL')) AS TIME_KEY, MONTH, DAY, YEAR, QUARTER(concat(year, '-', month, '-', day)), LAST_UPDATED
+                  FROM cdw_sapp_creditcard WHERE \$CONDITIONS" and 
+                  <br>
+                  <br>
+                  --query "SELECT SSN, CONCAT(UPPER(SUBSTRING(FIRST_NAME, 1,1)), LOWER(SUBSTRING(FIRST_NAME, 2))) AS FIRST_NAME, LOWER(MIDDLE_NAME) AS MIDDLE_NAME,
+                  CONCAT(UPPER(SUBSTRING(LAST_NAME, 1, 1)), LOWER(SUBSTRING(LAST_NAME, 2))) LAST_NAME, CREDIT_CARD_NO, STREET_NAME, CUST_CITY, CUST_STATE, CUST_COUNTRY, CONVERT(CUST_ZIP, UNSIGNED INTEGER) AS CUST_ZIP, CONCAT(LEFT(CUST_PHONE,3), '-' , RIGHT(CUST_PHONE,4)) AS CUST_PHONE, CUST_EMAIL, LAST_UPDATED
+                  FROM cdw_sapp_customer WHERE \$CONDITIONS"</p>
+
+   					<br>
+   					<br>
+
+   					<p class="text">4. Fourth command is representing the mappers, by specifying -m 1 means only one mapper will be run to import the table.</p>
+
+   					<br>
+   					<br>
+
+   					<p class="text" style="color: #556B2F;">-m1</p>
+
+   					<br>
+   					<br>
+
+   					<p class="text">5. Fifth command is indicating a full directory path and the data files that will be created directly inside the specified folder.</p>
+
+   					<br>
+   					<br>
+
+   					<p class="text" style="color: #556B2F;">--target-dir /user/Credit_Card_System/CDW_SAPP_D_BRANCH,
+                  <br>
+                  <br>
+                  --target-dir /user/Credit_Card_System/CDW_SAPP_F_CREDITCARD, 
+                  <br>
+                  <br>
+                  --target-dir /user/Credit_Card_System/CDW_SAPP_D_TIME and  
+                  <br>
+                  <br>
+                  --target-dir /user/Credit_Card_System/CDW_SAPP_D_CUSTOMER
+                  </p>
+
+   					<br>
+   					<br>
+
+   					<p class="text">6. Sixth command is a directive that will delete any existing data in target directory before starting the sqoop import process.</p>
+
+   					<br>
+   					<br>
+
+   					<p class="text" style="color: #556B2F;">--delete-target-dir</p>
+
+   					<br>
+   					<br>
+
+   					<p class="text">7. Seventh command is --fields-terminated-by is the option used during Sqoop Import which describe how the data will be written to HDFS. Format here is '\t'</p>
+
+   					<br>
+   					<br>
+
+   					<p class="text" style="color: #556B2F;">--fields-terminated-by '\t'</p>
+
+   					<br>
+   					<br>
+   					<br>
+
+   					<p class="text"><h6><u>Branch Table</u></h6></p>
+
+   					<br>
+   					<br>
+
+   					<p class="text">
+
+   					 	<img class="card-image1" src="sqoop1.png" alt="Branch Table">
+
+   					 </p>
+
+   					 <br>
+   					 <br>
+
+   					 <p class="text"><h6><u>Credit Card Table</u></h6></p>
+
+   					<br>
+   					<br>
+
+   					<p class="text">
+
+   					 	<img class="card-image2" src="sqoop2.png" alt="Credit Card Table">
+
+   					 </p>
+
+   					 <br>
+   					 <br>
+
+   					 <p class="text"><h6><u>Time Table</u></h6></p>
+
+   					<br>
+   					<br>
+
+   					<p class="text">
+
+   					 	<img class="card-image3" src="sqoop3.png" alt="Time Table">
+
+   					 </p>
+
+   					 <br>
+   					 <br>
+
+   					 <p class="text"><h6><u>Customer Table</u></h6></p>
+
+   					<br>
+   					<br>
+
+   					<p class="text">
+
+   					 	<img class="card-image4" src="sqoop4.png" alt="Customer Table">
+
+   					 </p>
+
+   					 <br>
+   					 <br>
+   					 <br>
+
+   					 <h5> < / Part One of Sqoop ></h5>
+
+   					 <br>
+   					 <br>
+   					 <br>
+
+   					 <h5>< Part Two of Sqoop ></h5>
+
+   					 <br>
+   					 <br>
+   					 <br>
+
+                   <p class="text">
+                     <h5>Sqoop Jobs:</h5> </p>
+
+                     <br>
+                     <br>
+
+                   <p class="text">A Sqoop job creates and saves the import and export commands. It specifies parameters to identify and recall the saved job. This re-calling or re-executing is used in the incremental import, which can import the updated rows from RDBMS table to HDFS.
+                  </p>
+
+                  <br>
+                  <br>
+
+                  <p class="text">The next set of slides gives a details description of the Sqoop Jobs created for re-execution.  The commands associated with these jobs are broken down below.
+                  </p>
+
+                  <br>
+                  <br>
+                  <br>
+
+
+                  <p class="text">1. Sqoop metastore is used to store Sqoop job information in a central place. The sqoop metastore helps collaboration between Sqoop users and developers; for example, user A can create a job to load some specific data, then any other user can access from any node in the cluster the same job and just run it again.
+                  </p>
+
+                  <br>
+                  <br>
+
+                  <p class="text" style="color: #556B2F;">--meta-connect jdbc:hsqldb:hsql://localhost:16000/sqoop</p>
+
+                  <br>
+                  <br>
+
+                  <p class="text">2. Next we Define a new saved job with the specified job-id, in this case it is cdw_sapp_branch, cdw_sapp_creditcard, cdw_sapp_time and cdw_sapp_customer.
+                  </p>
+
+                  <br>
+                  <br>
+
+                  <p class="text" style="color: #556B2F;">--create cdw_sapp_branch,
+                  <br>
+                   --create cdw_sapp_creditcard,
+                   <br>
+                    --create cdw_sapp_time and 
+                    <br>
+                    --create cdw_sapp_customer</p>
+
+                  <br>
+                  <br>
+
+                   <p class="text">3. The next command is for Sqoop import, a tool which we use for importing tables from RDBMS to HDFS is Sqoop.
+
+                  <br>
+                  <br>
+
+                  <p class="text" style="color: #556B2F;">-- import</p>
+
+                  <br>
+                  <br>
+
+                  <p class="text">4. Again we connect the driver which is referring to the JDBS driver.
+
+                  <br>
+                  <br>
+
+                  <p class="text" style="color: #556B2F;">--connect jdbc:mysql://localhost/cdw_sapp</p>
+
+                  <br>
+                  <br>
+
+                  <p class="text">5. Command line 5 is also referring to the JDBS driver.
+
+                  <br>
+                  <br>
+
+                  <p class="text" style="color: #556B2F;">--driver com.mysql.jdbc.Driver</p>
+
+                  <br>
+                  <br>
+
+                  <p class="text">6. The sixth command is the actual query.
+
+                  <br>
+                  <br>
+
+                  <p class="text" style="color: #556B2F;">--query "SELECT BRANCH_CODE, BRANCH_NAME, BRANCH_STREET, BRANCH_CITY, BRANCH_STATE, IF(BRANCH_ZIP = NULL, 999999, BRANCH_ZIP) AS BRANCH_ZIP, CONCAT('(', SUBSTRING(BRANCH_PHONE, 1, 3), ')', SUBSTRING(BRANCH_PHONE, 4, 3), '-', SUBSTRING(BRANCH_PHONE, 7, 4)) AS PHONE_NUMBER, LAST_UPDATED
+                  FROM cdw_sapp_branch WHERE \$CONDITIONS", 
+                  <br>
+                  <br>
+                  --query "SELECT TRANSACTION_ID, CREDIT_CARD_NO, CUST_SSN, DATE_FORMAT(CONCAT(year, '-', month, '-', day), GET_FORMAT(DATE, 'INTERNAL')) AS TIMEID, BRANCH_CODE, TRANSACTION_TYPE, TRANSACTION_VALUE, LAST_UPDATED
+                   FROM cdw_sapp_creditcard WHERE \$CONDITIONS", 
+                   <br>
+                   <br>
+                   --query "SELECT DATE_FORMAT(CONCAT(year, '-', month, '-', day), GET_FORMAT(DATE, 'INTERNAL')) AS TIME_KEY, MONTH, DAY, YEAR, QUARTER(concat(year, '-', month, '-', day)), LAST_UPDATED
+                   FROM cdw_sapp_creditcard WHERE \$CONDITIONS" and 
+                   <br>
+                   <br>
+                   --query "SELECT SSN, CONCAT(UPPER(SUBSTRING(FIRST_NAME, 1,1)), LOWER(SUBSTRING(FIRST_NAME, 2))) AS FIRST_NAME, LOWER(MIDDLE_NAME) AS MIDDLE_NAME,
+                   CONCAT(UPPER(SUBSTRING(LAST_NAME, 1, 1)), LOWER(SUBSTRING(LAST_NAME, 2))) LAST_NAME, CREDIT_CARD_NO, STREET_NAME, CUST_CITY, CUST_STATE, CUST_COUNTRY, CONVERT(CUST_ZIP, UNSIGNED INTEGER) AS CUST_ZIP, CONCAT(LEFT(CUST_PHONE,3), '-' , RIGHT(CUST_PHONE,4)) AS CUST_PHONE, CUST_EMAIL, LAST_UPDATED
+                   FROM cdw_sapp_customer WHERE \$CONDITIONS"</p>
+
+                  <br>
+                  <br>
+
+                  <p class="text">7. Seventh command is representing the mappers, by specifying -m 1 means only one mapper will be run to import the table.</p>
+
+                  <br>
+                  <br>
+
+                  <p class="text" style="color: #556B2F;">-m1</p>
+
+                  <br>
+                  <br>
+
+                  <p class="text">8. At command eigth we indicating a full directory path and the data files that will be created directly inside the specified folder.</p>
+
+                  <br>
+                  <br>
+
+                  <p class="text" style="color: #556B2F;">--target-dir /user/Credit_Card_System/CDW_SAPP_D_BRANCH, 
+                  <br>
+                  <br>
+                  --target-dir /user/Credit_Card_System/CDW_SAPP_F_CREDITCARD, 
+                  <br>
+                  <br>
+                  --target-dir /user/Credit_Card_System/CDW_SAPP_D_TIME and 
+                  <br>
+                  <br>
+                  --target-dir /user/Credit_Card_System/CDW_SAPP_D_CUSTOMER
+                  </p>
+
+                  <br>
+                  <br>
+
+                  <p class="text">9. In the ninth command I have specified 2 versions of Sqoop append, 1. Incremental append and incremental lastmodified.   Append should be used when importing a table where new rows are continually being added with increasing row id values.  The second version of lastmodified should use this when rows of the source table may be updated, and each such update will set the value of a last-modified column to the current timestamp.</p>
+
+                  <br>
+                  <br>
+
+                  <p class="text" style="color: #556B2F;">--incremental append 
+                  <br>
+                  <br>
+                  --append
+                  <br>
+                  --incremental lastmodified</p>
+
+                  <br>
+                  <br>
+
+                  <p class="text">9. In the ninth command I have specified 2 versions of Sqoop append, 1. Incremental append and incremental lastmodified.   Append should be used when importing a table where new rows are continually being added with increasing row id values.  The second version of lastmodified should use this when rows of the source table may be updated, and each such update will set the value of a last-modified column to the current timestamp.</p>
+
+                  <br>
+                  <br>
+
+                  <p class="text" style="color: #556B2F;">--incremental append 
+                  <br>
+                  <br>
+                  --append
+                  <br>
+                  --incremental lastmodified</p>
+
+                  <br>
+                  <br>
+
+                  <p class="text">10. Will check data newer than some previously-imported set of rows.
+                  </p>
+
+                  <br>
+                  <br>
+
+                  <p class="text" style="color: #556B2F;">--check-column LAST_UPDATED
+                  </p>
+
+                  <br>
+                  <br>
+
+                  <p class="text">11. Will check last value at "0" where all (b) jobs will check at a given date or parameter.
+                  </p>
+
+                  <br>
+                  <br>
+
+                  <p class="text" style="color: #556B2F;">--last-value '0' and 
+                  <br>
+                  <br>
+                  --last-value '1990-01-01'
+                  </p>
+
+                  <br>
+                  <br>
+
+                  <p class="text">12. All (b) jobs will save data into a directory path and those files will be created directly inside the specified folder.
+                  </p>
+
+                  <br>
+                  <br>
+
+                  <p class="text" style="color: #556B2F;">--target-dir /user/Credit_Card_System/CDW_SAPP_D_BRANCH, 
+                  <br>
+                  <br>
+                  --target-dir /user/Credit_Card_System/CDW_SAPP_F_CREDITCARD, 
+                  <br>
+                  <br>
+                  --target-dir /user/Credit_Card_System/CDW_SAPP_D_TIME and 
+                  <br>
+                  <br>
+                  --target-dir /user/Credit_Card_System/CDW_SAPP_D_CUSTOMER
+                  </p>
+
+                  <br>
+                  <br>
+
+                  <p class="text">13. The final command is --fields-terminated-by the option used during Sqoop Import which describe how the data will be written to HDFS. Format here is '\t'
+                  </p>
+
+                  <br>
+                  <br>
+
+                  <p class="text" style="color: #556B2F;">--fields-terminated-by '\t'
+
+                  </p>
+
+                  <br>
+                  <br>
+                  <br>
+
+                  <p class="text"><h6><u>Branch Table</u></h6></p>
+
+                  <br>
+                  <br>
+
+                  <p class="text">
+
+                     <img class="card-image5" src="sqoop5.png" alt="Branch Table">
+
+                   </p>
+
+                   <br>
+                   <br>
+
+                   <p class="text"><h6><u>Credit Card Table</u></h6></p>
+
+                  <br>
+                  <br>
+
+                  <p class="text">
+
+                     <img class="card-image6" src="sqoop6.png" alt="Credit Card Table">
+
+                   </p>
+
+                   <br>
+                   <br>
+
+                   <p class="text"><h6><u>Time Table</u></h6></p>
+
+                  <br>
+                  <br>
+
+                  <p class="text">
+
+                     <img class="card-image7" src="sqoop7.png" alt="Time Table">
+
+                   </p>
+
+                   <br>
+                   <br>
+
+                   <p class="text"><h6><u>Customer Table</u></h6></p>
+
+                  <br>
+                  <br>
+
+                  <p class="text">
+
+                     <img class="card-image8" src="sqoop8.png" alt="Customer Table">
+
+                   </p>
+
+                   <br>
+                   <br>
+                   <br>
+               
+                  
+
+                   <h5> < / Part Two of Sqoop ></h5>
+
+
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+
+
+                  <p class="text">
+
+                      <img class="card-image9" src="sqoop.png" alt="Sqoop">
+
+                    </p>
+
+                    <br>
+                    <br>
+
+
+
+
+
+           </div>
+      </div>
+</div>
+
+
+
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
+	
+			
+
+					
+
+
+</body>
+
+
+	<footer>Aisha Durrani - PBPS</footer>
+
+
+
+
+</html>
