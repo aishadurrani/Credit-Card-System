@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="java.css">
+
+	
+	
+	<title>Java</title>
+
+</head>
+
+<header>
+
+	<div class="header">
+		<div class="container">
+			<div class="jumbotron">
+
+	 			<h1><strong>Java</strong></h1>
+	 			
+
+			</div>
+		
+
+			
+			<nav>
+				
+						
+							
+					<a href="index.html"><button id="button" type="button" class="btn btn-secondary">Home</button></a>
+
+
+					<a href="method.html"><button id="button" type="button" class="btn btn-secondary">Method</button></a>
+
+
+					<a href="sql.html"><button id="button" type="button" class="btn btn-secondary">RDBMS - SQL</button></a>
+							
+					
+					
+					<a href="java.html"><button id="button" type="button" class="btn btn-secondary">Java</button></a>
+							
+				
+
+					<a href="hive.html"><button id="button" type="button" class="btn btn-secondary">Hive</button></a>
+							
+				
+
+					<a href="sqoop.html"><button id="button" type="button" class="btn btn-secondary">Sqoop</button></a>
+
+				
+
+					<a href="oozie.html"><button id="button" type="button" class="btn btn-secondary">Oozie</button></a>
+
+
+					<a href="datavisual.html"><button id="button" type="button" class="btn btn-secondary">Visualization</button></a>
+				
+				
+			</nav>
+		</div>
+	 </div> 
+
+
+	</header>
+
+
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+	
+	<body>
+				
+
+
+			<div class="container">
+			
+			<div class="card">
+  				<h2 class="card-header">JDBC</h2>
+  					<div class="card-body">
+    			
+   					 <p class="text" style>
+   					 	<h5>JDBC (Java Database Connectivity):</h5> </p>
+
+   					 	<br>
+   					 	<br>
+
+   					 	<p class="text">JDBC (Java Database Connectivity) is the Java API that manages connecting to a database, issuing queries and commands, and handling result sets obtained from the database. JDBC was initially conceived as a client-side API, enabling a Java client to interact with a data source.
+   					 	</p>
+
+   					 	<br>
+
+   					 	<p class="text">The application program interface lets you encode access request statements in Structured Query Language (SQL) that are then passed to the program that manages the database. It returns the results through a similar interface.</p>
+
+   					 	<br>
+
+   					    <p class="text"><ul>Developed as an alternative to the C-based ODBC (Open Database Connectivity) API, JDBC offers a programming-level interface that handles the mechanics of Java applications communicating with a database or RDBMS. The JDBC interface consists of two layers:</ul>
+
+   					    <br>
+   					    <br>
+
+							<li>The JDBC API supports communication between the Java application and the JDBC manager.</li>
+
+							<br>
+							<br>
+
+							<li>The JDBC driver supports communication between the JDBC manager and the database driver.</li>
+
+							<br>
+							<br>
+
+
+						    <p class="text">JDBC is the common API that your application code interacts with.
+   					 	    </p>
+
+   					 	    <br>
+   					 	    <br>
+   					 	    <br>
+   					 	    <br>
+
+
+   					 	    <p class="text"><h4>JDBC Architecture</h4>
+
+					 				    <br>
+
+     									     <img class="card-image1" src="java1.png" alt="Java1">
+
+
+   							</p>
+
+
+
+							<br>
+   					 	    <br>
+
+   					 	    <p class="text"><ul>The JDBC library includes APIs for each of the tasks mentioned below that are commonly associated with database usage</ul>
+
+   					 	    <br>
+
+   					 	    <li>➢ Making a connection to a database</li>
+
+   					 	    <br>
+
+   					 	    <li>➢ Creating SQL or MySQL statements</li>
+
+   					 	    <br>
+
+   					 	    <li>➢ Executing SQL or MySQL queries in the database</li>
+
+   					 	    <br>
+
+   					 	    <li>➢ Viewing & Modifying the resulting records</li>
+
+   					 		</p>
+
+   					 		<br>
+   					 		<br>
+   					 		
+
+   					 		<p class="text">Below is the method used in creating our Credit Card System JDBS interface using Eclipse.</p>
+
+   					 		<br>
+   					 		<br>
+   					 		<br>
+   					 		<br>
+
+   					 		<p class="text"><h5>1. JDBC Connection : Registering the Database Driver</h5></p>
+
+							<br>
+
+							<p class="text">
+
+   										 	<img class="card-image2" src="java2.png" alt="Java2">
+
+   					 	 						
+   										 </p>
+
+
+   							<br>
+   							<br>
+   							<br>
+   							<br>
+   							<br>
+   							<br>
+
+
+
+
+
+   					 		<p class="text"><h5>2. JDBC Query the Database : Sending our SQL to the Database</h5></p>
+
+   					 			<br>
+
+   					 		<p class="text">Querying a database means searching through its data. You do so by sending SQL statements to the database.
+   					 		</p>
+
+   					 		<br>
+   					 		<br>
+
+
+   						   <button type="button" class="btn btn-primary" data-toggle="modal" data-target= "#modal1">Click to view My Queries</button>
+
+							<div id="modal1" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  								<div class="modal-dialog modal-lg">
+   					   				 <div class="modal-content">
+   					   				 	<div class ="modal-header"><h4 class='col-12 modal-title text-center'>myQueries.java</h4></div>
+   					   				 		<div class ="modal-body">
+
+
+
+   										 <p class="text">
+
+   										 	<img class="card-image3" src="java3.png" alt="Java3">
+
+   					 	 						
+   										 </p>
+      
+   				 					</div>
+  								</div>
+  							</div>
+						</div>
+
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+
+
+						<p class="text"><h5>3. DAO : Data Access Object</h5></p>
+
+						<br>
+						<br>
+
+						
+						<p class="text">DAO design pattern is a way to reduce coupling between Business logic and Persistence logic. Application business logic often needs domain objects which are persisted in either Database, File System or any other persistence storage. Below is our Customer DAO and Transaction Dao.</p>
+
+						<br>
+						<br>
+
+
+						<p class="text"><h6>Customer DAO</h6></p>
+
+						<br>
+
+
+   						 <button type="button" class="btn btn-primary" data-toggle="modal" data-target= "#modal2">Click to view Customer DAO</button>
+
+							<div id="modal2" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  								<div class="modal-dialog modal-lg">
+   					   				 <div class="modal-content">
+   					   				 	<div class ="modal-header"><h4 class='col-12 modal-title text-center'>CustomerDAO.java</h4></div>
+   					   				 		<div class ="modal-body">
+
+
+
+   										 <p class="text">
+
+   										 	<img class="card-image4" src="java4.png" alt="Java4">
+
+   										 	<img class="card-image5" src="java5.png" alt="Java5">
+
+   					 	 						
+   										 </p>
+      
+   				 					</div>
+  								</div>
+  							</div>
+						</div>
+
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+
+
+						<p class="text"><h6>Transaction DAO</h6></p>
+
+						<br>
+
+
+   						 <button type="button" class="btn btn-primary" data-toggle="modal" data-target= "#modal3">Click to view Transaction DAO</button>
+
+							<div id="modal3" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  								<div class="modal-dialog modal-lg">
+   					   				 <div class="modal-content">
+   					   				 	<div class ="modal-header"><h4 class='col-12 modal-title text-center'>TransactionDAO.java</h4></div>
+   					   				 		<div class ="modal-body">
+
+
+
+   										 <p class="text">
+
+   										 	<img class="card-image6" src="java6.png" alt="Java6">
+
+   					 	 						
+   										 </p>
+      
+   				 					</div>
+  								</div>
+  							</div>
+						</div>
+
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						
+
+
+
+						<p class="text"><h5>4. JDBC Model</h5></p>
+
+						<br>
+			
+
+
+						<p class="text">Customer and Transaction Model</p>
+
+						<br>
+						<br>
+
+
+						<p class="text"><h6>Customer Model</h6></p>
+
+						<br>
+
+
+   						 <button type="button" class="btn btn-primary" data-toggle="modal" data-target= "#modal4">Click to view Customer Model</button>
+
+							<div id="modal4" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  								<div class="modal-dialog modal-lg">
+   					   				 <div class="modal-content">
+   					   				 	<div class ="modal-header"><h4 class='col-12 modal-title text-center'>Customer.java</h4></div>
+   					   				 		<div class ="modal-body">
+
+
+
+   										 <p class="text">
+
+   										 	<img class="card-image7" src="java7.png" alt="Java7">
+
+   										 	<img class="card-image8" src="java8.png" alt="Java8">
+
+   					 	 						
+   										 </p>
+      
+   				 					</div>
+  								</div>
+  							</div>
+						</div>
+
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+
+						<p class="text"><h6>Transaction Model</h6></p>
+
+						<br>
+
+
+   						 <button type="button" class="btn btn-primary" data-toggle="modal" data-target= "#modal5">Click to view Transaction Model</button>
+
+							<div id="modal5" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  								<div class="modal-dialog modal-lg">
+   					   				 <div class="modal-content">
+   					   				 	<div class ="modal-header"><h4 class='col-12 modal-title text-center'>Transaction.java</h4></div>
+   					   				 		<div class ="modal-body">
+
+
+
+   										 <p class="text">
+
+   										 	<img class="card-image9" src="java9.png" alt="Java9">
+
+   										 	<img class="card-image10" src="java10.png" alt="Java10">
+
+   					 	 						
+   										 </p>
+      
+   				 					</div>
+  								</div>
+  							</div>
+						</div>
+
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+
+
+						<p class="text"><h5>5. The Runnable Files</h5></p>
+
+						<br>
+						<br>
+
+						
+						<p class="text">Runnable interface is a type of functional interface which is designed to provide a common protocol for objects that wish to execute code while they are active. The Runnable interface should be implemented by any class whose instances are intended to be executed by a thread. The class must define a method run. The thread is in runnable state after invocation of start() method, but the thread scheduler has not selected it to be the running thread.</p>
+
+						<br>
+						<br>
+
+
+						<p class="text"><h6>Customer Runnable</h6></p>
+
+						<br>
+
+
+   						 <button type="button" class="btn btn-primary" data-toggle="modal" data-target= "#modal6">Click to view Customer Runnable</button>
+
+							<div id="modal6" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  								<div class="modal-dialog modal-lg">
+   					   				 <div class="modal-content">
+   					   				 	<div class ="modal-header"><h4 class='col-12 modal-title text-center'>Customer_runnable.java</h4></div>
+   					   				 		<div class ="modal-body">
+
+
+
+   										 <p class="text">
+
+   										 	<img class="card-image11" src="java11.png" alt="Java11">
+
+   										 	<img class="card-image12" src="java12.png" alt="Java12">
+
+   										 	<img class="card-image13" src="java13.png" alt="Java13">
+
+   										 	<img class="card-image14" src="java14.png" alt="Java14">
+
+   					 	 						
+   										 </p>
+      
+   				 					</div>
+  								</div>
+  							</div>
+						</div>
+
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+
+						<p class="text"><h6>Transaction Runnable</h6></p>
+
+						<br>
+
+
+   						 <button type="button" class="btn btn-primary" data-toggle="modal" data-target= "#modal7">Click to view Transaction Runnable</button>
+
+							<div id="modal7" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  								<div class="modal-dialog modal-lg">
+   					   				 <div class="modal-content">
+   					   				 	<div class ="modal-header"><h4 class='col-12 modal-title text-center'>Transaction_runnable.java</h4></div>
+   					   				 		<div class ="modal-body">
+
+
+
+   										 <p class="text">
+
+   										 	<img class="card-image15" src="java15.png" alt="Java15">
+
+   										 	<img class="card-image16" src="java16.png" alt="Java16">
+
+   					 	 						
+   										 </p>
+      
+   				 					</div>
+  								</div>
+  							</div>
+						</div>
+
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+
+						<p class="text"><h5>6. The Main Method</h5></p>
+
+						<br>
+						<br>
+
+						<p class="text">The main() method is the entry point into the application. When the Java interpreter executes an application, it starts by calling the class's main method. The signature of the method is always: public static void main(String[] args).   Command-line arguments are passed through the args parameter, which is an array of Strings.</p>
+
+						<br>
+						<br>
+
+
+
+						<p class="text"><h6>Main Method</h6></p>
+
+						<br>
+
+					
+
+
+   						 <button type="button" class="btn btn-primary" data-toggle="modal" data-target= "#modal8">Click to view Main</button>
+
+							<div id="modal8" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  								<div class="modal-dialog modal-lg">
+   					   				 <div class="modal-content">
+   					   				 	<div class ="modal-header"><h4 class='col-12 modal-title text-center'>Main.java</h4></div>
+   					   				 		<div class ="modal-body">
+
+
+
+   										 <p class="text">
+
+   										 	<img class="card-image17" src="java17.png" alt="Java17">
+
+
+   					 	 						
+   										 </p>
+      
+   				 					</div>
+  								</div>
+  							</div>
+						</div>
+
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+
+
+						<br>
+						<br>
+
+						
+							<p class="text">
+
+		   					 	 <img class="card-image18" src="javaicon2.png" alt="Java Icon">
+
+		   					</p>
+
+		   					  <br>
+		   					  <br>
+		   					  <br>
+   				  </div>
+             </div>
+       </div>
+
+
+
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
+	
+			
+
+					
+
+
+</body>
+
+
+	<footer>Aisha Durrani - PBPS</footer>
+
+
+
+
+</html>

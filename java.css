@@ -1,0 +1,752 @@
+body {
+
+	
+	
+	
+ 	 background-color: gray;
+     background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);
+     background-size: 50px 50px;
+
+
+	
+
+
+}
+
+
+
+.jumbotron {
+
+	/*background: 
+
+	radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent),
+	radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent) 0 -50px;
+	background-color: slategray;
+	background-size:75px 100px;
+	*/
+	background-color: #FF8C00;
+	back
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom right;
+    
+	
+
+
+}
+
+
+
+h1 {
+	text-align: center;
+	font-size: 85px;
+	font-family: fantasy;
+	color: slategray;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+h2 {
+
+	
+	text-align: center;
+	font-size: 80px;
+	font-family: fantasy;
+	color: #FF8C00;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+		
+}
+
+
+h3 {
+	text-align: center;
+	font-size: 40px;
+	font-family: fantasy;
+	color: #FF8C00;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+h4 {
+	text-align: center;
+	font-size: 30px;
+	font-family: fantasy;
+	color:#FF8C00;
+	text-decoration: underline;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+h5 {
+	text-align: left;
+	font-size: 25px;
+	font-family: fantasy;
+	color:#FF8C00;
+	text-decoration: underline;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+h6 {
+	text-align: center;
+	font-size: 20px;
+	font-family: fantasy;
+	color:#FF8C00;
+	text-decoration: underline;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+
+.btn  {
+	
+		background-color: #FF8C00;
+
+		
+		float: left;
+		font-size: 16px;
+		display: inline-block;
+		font-family: fantasy;
+		color: slategray;
+		width: 100%;
+		text-align: center;
+		text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+
+
+
+}
+
+
+#button {
+	width: 12.5%;
+}
+
+
+.btn:hover {
+
+	background-color: slategray;
+	
+}
+
+
+
+
+
+.card-header {
+
+
+	background-color: #FF8C00;
+
+	text-align: center;
+	font-size: 35px;
+	font-family: fantasy;
+	color: white;
+	text-decoration: underline;
+	color: slategray;
+	
+
+	
+	
+}
+
+
+
+
+
+
+.card-body {
+	background-color: white; 
+	font-family: Georgia, serif;
+	font-size: 16px;
+	
+}
+
+
+.card-image1 {
+	padding-right: 2%;
+	padding-left: 2%;
+	height: 380px;
+	width: 100%;
+}
+
+
+.card-image2 {
+	padding-right: 5%;
+	padding-left: 5%;
+	height: 250px;
+	width: 100%;
+}
+
+.card-image3 {
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 850px;
+	width: 100%;
+}
+
+.card-image4 {
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 550px;
+	width: 100%;
+}
+
+
+.card-image5 {
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 550px;
+	width: 100%;
+}
+
+
+.card-image6 {
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 850px;
+	width: 100%;
+}
+
+.card-image7 {
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 800px;
+	width: 100%;
+}
+
+.card-image8 {
+    padding-right: 0%;
+	padding-left: 0%;
+	height: 800px;
+	width: 100%;
+}
+
+.card-image9 {
+	
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 750px;
+	width: 100%;
+}
+
+
+.card-image10 {
+
+
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 750px;
+	width: 100%;
+	
+	
+}
+
+.card-image11 {
+
+
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 700px;
+	width: 100%;
+
+}
+
+.card-image12 {
+
+
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 700px;
+	width: 100%;
+
+}
+
+.card-image13 {
+
+
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 700px;
+	width: 100%;
+
+}
+
+.card-image14 {
+
+
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 700px;
+	width: 100%;
+
+}
+
+.card-image15 {
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 800px;
+	width: 100%;
+}
+
+.card-image16 {
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 800px;
+	width: 100%;
+}
+
+
+.card-image17 {
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 950px;
+	width: 100%;
+}
+
+
+.card-image18 {
+
+	padding-bottom: 5px;
+    padding-right: 35%;
+	padding-left: 35%;
+	height: 180px;
+	width: 100%;
+}
+
+
+
+
+.text {
+	font-family: Georgia, serif;
+	color: slategray;
+	color: black;
+	font-size: 16px;
+}
+
+
+footer {
+	font-size: 18px;
+	font-family: fantasy;
+	color: #FF8C00;
+	font-weight: bold;
+	margin-top: 60px;
+	padding-bottom: 10px;
+	position: static;
+   	left: 0;
+   	bottom: 0;
+   	height: 40px;
+   	width: 100%;
+   	text-align: center;
+   	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+
+	h1 {
+	text-align: center;
+	font-size: 75px;
+	font-family: fantasy;
+	color: slategray;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+h2 {
+
+	
+	text-align: center;
+	font-size: 35px;
+	font-family: fantasy;
+	color: #FF8C00;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+		
+}
+
+
+h3 {
+	text-align: center;
+	font-size: 30px;
+	font-family: fantasy;
+	color: #FF8C00;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+h4 {
+	text-align: center;
+	font-size: 30px;
+	font-family: fantasy;
+	color:#FF8C00;
+	text-decoration: underline;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+h5 {
+	text-align: left;
+	font-size: 30px;
+	font-family: fantasy;
+	color:#FF8C00;
+	text-decoration: underline;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+h6 {
+	text-align: center;
+	font-size: 30px;
+	font-family: fantasy;
+	color:#FF8C00;
+	text-decoration: underline;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+
+.btn  {
+	
+		background-color: #FF8C00;
+
+		
+		float: left;
+		font-size: 17px;
+		display: inline-block;
+		font-family: fantasy;
+		color: slategray;
+		width: 100%;
+		text-align: center;
+		text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+
+
+
+}
+
+
+#button {
+	position: static;
+	float: left;
+	font-size: 21px;
+	font-family: fantasy;
+	text-align: center;
+	font-weight: bold;
+	width: 25%; 
+	display:block;
+	padding-bottom: 10px;
+
+
+}
+
+.btn:hover {
+
+	background-color: slategray;
+	
+}
+
+
+
+
+
+.card-header {
+
+
+	background-color: #FF8C00;
+
+	text-align: center;
+	font-size: 35px;
+	font-family: fantasy;
+	color: white;
+	text-decoration: underline;
+	color: slategray;
+	
+
+	
+	
+}
+
+
+
+
+
+
+.card-body {
+	background-color: white; 
+	font-family: Open Sans;
+	font-size: 22px;
+	
+}
+
+
+.card-image1 {
+	padding-right: 2%;
+	padding-left: 2%;
+	height: 380px;
+	width: 100%;
+}
+
+
+.card-image2 {
+	padding-right: 5%;
+	padding-left: 5%;
+	height: 250px;
+	width: 100%;
+}
+
+.card-image3 {
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 900px;
+	width: 100%;
+}
+
+.card-image4 {
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 800px;
+	width: 100%;
+}
+
+
+.card-image5 {
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 800px;
+	width: 100%;
+}
+
+
+.card-image6 {
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 900px;
+	width: 100%;
+}
+
+.card-image7 {
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 800px;
+	width: 100%;
+}
+
+.card-image8 {
+    padding-right: 0%;
+	padding-left: 0%;
+	height: 800px;
+	width: 100%;
+}
+
+.card-image9 {
+	
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 700px;
+	width: 100%;
+}
+
+
+.card-image10 {
+
+
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 700px;
+	width: 100%;
+	
+	
+}
+
+.card-image11 {
+
+
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 800px;
+	width: 100%;
+
+}
+
+.card-image12 {
+
+
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 800px;
+	width: 100%;
+
+}
+
+.card-image13 {
+
+
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 800px;
+	width: 100%;
+
+}
+
+.card-image14 {
+
+
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 800px;
+	width: 100%;
+
+}
+
+.card-image15 {
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 750px;
+	width: 100%;
+}
+
+.card-image16 {
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 750px;
+	width: 100%;
+}
+
+
+.card-image17 {
+	padding-right: 0%;
+	padding-left: 0%;
+	height: 1100px;
+	width: 100%;
+}
+
+
+.card-image18 {
+
+	padding-bottom: 5px;
+    padding-right: 35%;
+	padding-left: 35%;
+	height: 120px;
+	width: 100%;
+}
+
+
+
+
+.text {
+	font-family: Open Sans;
+	color: slategray;
+	color: black;
+	font-size: 22px;
+}
+
+
+footer {
+	font-size: 25px;
+	font-family: fantasy;
+	color: #FF8C00;
+	font-weight: bold;
+	margin-top: 60px;
+	padding-bottom: 10px;
+	position: static;
+   	left: 0;
+   	bottom: 0;
+   	height: 40px;
+   	width: 100%;
+   	text-align: center;
+   	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+   
+
+
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+

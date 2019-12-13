@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	
+	<title>Credit Card Systems Manual</title>
+
+</head>
+
+<header>
+
+	<div class="header">
+		<div class="container">
+			<div class="jumbotron">
+
+	 			<h1><strong>Credit Card System</strong></h1>
+	 			<h3>Case Study - Data Engineering</h3>
+
+			</div>
+		
+
+			
+			<nav>
+					
+
+					<a href="index.html"><button id="button" type="button" class="btn btn-secondary">Home</button></a>
+
+
+					<a href="method.html"><button id="button" type="button" class="btn btn-secondary">Method</button></a>
+
+
+					<a href="sql.html"><button id="button" type="button" class="btn btn-secondary">RDBMS - SQL</button></a>
+							
+					
+					
+					<a href="java.html"><button id="button" type="button" class="btn btn-secondary">Java</button></a>
+							
+				
+
+					<a href="hive.html"><button id="button" type="button" class="btn btn-secondary">Hive</button></a>
+							
+				
+
+					<a href="sqoop.html"><button id="button" type="button" class="btn btn-secondary">Sqoop</button></a>
+
+				
+
+					<a href="oozie.html"><button id="button" type="button" class="btn btn-secondary">Oozie</button></a>
+
+
+					<a href="datavisual.html"><button id="button" type="button" class="btn btn-secondary">Visualization</button></a>
+				
+			</nav>
+
+		</div>
+	</div>
+
+
+	</header>
+
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+	
+	<body>
+				
+
+			
+		<div class="container">
+			
+			<div class="card">
+  				<h2 class="card-header">Introduction</h2>
+  					<div class="card-body">
+
+
+  					 <p class="text">Credit Card System is a prototype, built to mirror a Bank Card payment system used to settle financial transactions through the transfer of monetary value. This includes the institutions, instruments, people, rules, procedures, standards, and technologies that make this exchange possible.   Payment systems are used in lieu of tendering cash in domestic and international transactions.   This can be a major service provided by banks and other financial institutions.
+   					 </p>
+
+   					 <br>
+   				
+
+
+					 <p class="text">A card is issued to a users as a method of payment for every day/month expenses.   It allows the cardholder to pay for goods and services based on the holders promise to pay for them.  There are a number of payment cards, the most common being credit cards and debit cards. A payment card is electronically linked to an account or accounts belonging to the cardholder.</p>
+
+					 <br>
+					 <br>
+					 <br>
+
+					 <p class="text"><u>Credit Card System (CCS) application:</u>
+					 </p>
+
+					 <br>
+				
+
+					 <p class="text">This Credit Card System Application will include fields that can be adjusted and viewed by the managers of the Bank.
+					 </p>
+
+					 <br>
+
+
+					 <p class="text">On the surface, the credit card transaction process seems simple: Customers swipe their cards, and before they know it, the transaction is complete. Behind every swipe, however, is a profoundly more complex procedure than what meets the eye. In fact, sliding the card and signing the receipt are only the first and final steps of a complicated procedure. And the whole process — though it happens in merely a few seconds — involves multiple stages and several actors working behind the scenes.</p>
+
+					 <br>
+					 <br>
+
+
+
+					<p class="text">This Bank Credit Card Management System can create, delete or modify customer and account details by a bank admin.   This system is built not only to extract stored data but in fact update any changes made to it.</p>
+
+					<br>
+					<br>
+
+
+					 <p class="text"><ul><u>Below are some of the most important applications used in the process of creating and maintaining this system:</u></ul>
+
+					 <br>
+					 <br>
+
+
+					 <li>MySQL ( RDBMS )</li>
+
+					 <br>
+
+					 <li>JDBC (Java API)</li>
+
+					 <br>
+
+					 <li>Data Extraction and Transformation with Sqoop</li>
+
+					 <br>
+
+					 <li>Data Loading with Hive</li>
+
+					 <br>
+
+					 <li>Automation & Optimization with Oozie</li>
+
+					 <br>
+
+					 <li>Data Visualization in Hive</li></p>
+
+					 <br>
+					 <br>
+					 <br>
+
+					 <h5>Overall View</h5>
+
+					 <br>
+					 <br>
+
+					 <p class="text"><ul>The following are modules in this proposed system.</ul></p>
+
+					 <br>
+
+					 <li>Customer Details</li>
+
+					 <br>
+
+					 <li>Transaction Details</li>
+
+					 <br>
+					 <br>
+
+					 <h5><ul>Scope of the system</ul></h5>
+
+					 <br>
+
+					 <li>Customer Details -- will be used by the bank admin to register existing Customer details into the system.</li>
+
+					 <br>
+
+					 <li>Transaction Details - will be used by the bank admin to register account details into the system.</li>
+
+					 <br>
+					 <br>
+
+					 <h5>System Perspective</h5>
+
+					 <br>
+
+					  <p class="text">The Credit Card System is an independent software system developed to manage activities like registering new customer, approving or cancelling their requests, etc. using this architecture.</p>
+
+					  <br>
+					  <br>
+
+					  <h5>Impact of the System</h5>
+
+					  <br>
+
+					  <p class="text">This is a new product which is developed for internal users. Expected impact of the product is to automate existing manual processes in order to make them more efficient and cost effective.</p>
+
+					  <br>
+					  <br>
+
+					  <h5>Assumptions, Risks / Constraints</h5>
+
+					  <br>
+
+					  <p class="text"><ul>Assumptions:</ul>
+
+					  	<br>
+
+					  <li>1. The processing admin must possess prior knowledge on Credit Card System operations.</li>
+
+					  <br>
+
+					  <li>2. The admin should have the details of the Customer to be registered for applying credit card updates into the system.</li>
+					  </p>
+
+					  <br>
+					  <br>
+
+					  <p class="text">The tabs located at the top of the page will give a detailed description of the role, significance and time of each application used in the process of creating this system.</p>
+
+					  <br>
+					  <br>
+					  <br>
+				      <br>
+
+				
+					  <p class="text">
+
+					  		
+
+					  		<img class="card-image1" src="card2.jpg" alt="card">
+
+
+
+   					  </p>
+
+   					  <br>
+   					  <br>
+   					  <br>
+   					
+
+
+   					</div>
+   				</div>
+   			</div>
+
+
+	<script type="text/javascript" src="ccs.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+			
+
+					
+
+
+</body>
+
+
+	<footer>Aisha Durrani - PBPS</footer>
+
+
+
+
+</html>
