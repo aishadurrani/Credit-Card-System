@@ -1,0 +1,347 @@
+body {
+
+	
+	
+	
+    background:
+        radial-gradient(black 3px, transparent 4px),
+        radial-gradient(black 3px, transparent 4px),
+        linear-gradient(#fff 4px, transparent 0),
+        linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+        linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+        #fff;
+        background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+        background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+	
+
+
+
+
+	
+
+
+}
+
+
+
+.jumbotron {
+
+	/*background: 
+
+	radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent),
+	radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent) 0 -50px;
+	background-color: slategray;
+	background-size:75px 100px;
+	*/
+	background-color: black;
+	
+	
+
+
+}
+
+
+
+
+h1 {
+	text-align: center;
+	font-size: 70px;
+	font-family: fantasy;
+	color: white;
+	font-weight: bold;
+}
+
+
+h2 {
+	text-align: center;
+	font-size: 40px;
+	font-family: fantasy;
+	color: white;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+h3 {
+	text-align: center;
+	font-size: 40px;
+	font-family: fantasy;
+	color:black;
+}
+
+
+h5 {
+	text-align: left;
+	font-size: 30px;
+	font-family: fantasy;
+	color:black;
+	text-decoration: underline;
+}
+
+
+h6 {
+	text-align: left;
+	font-size: 20px;
+	font-family: fantasy;
+	color:black;
+	text-decoration: underline;
+}
+
+
+.btn  {
+	background-color: black;
+        
+		float: left;
+		font-size: 16px;
+		display: inline-block;
+		font-family: fantasy;
+		color:white;
+
+
+}
+
+
+#button {
+	width: 12.5%;
+}
+
+
+.card-header {
+	text-align: center;
+	font-size: 35px;
+	font-family: fantasy;
+	color:white;
+	text-decoration: underline;
+	background-color: black;
+}
+
+
+
+
+
+
+.card-body {
+	background-color: white; 
+	font-family: Georgia, serif;
+	font-size: 16px;
+}
+
+.text {
+	font-family: Georgia, serif;
+	color:black;
+	font-size: 16px;
+}
+
+
+
+
+
+.carousel {
+	padding-left: 250px;
+	padding-right: 250px;
+}
+
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+}
+.carousel-indicators .active {
+    
+    background-color: black;
+}
+
+footer {
+	font-size: 18px;
+	font-family: fantasy;
+	color: black;
+	font-weight: bold;
+	margin-top: 60px;
+	padding-bottom: 10px;
+	position: static;
+   	left: 0;
+   	bottom: 0;
+   	height: 40px;
+   	width: 100%;
+   	text-align: center;
+   
+}
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+   
+
+.btn  {
+		background-color: black;
+		float: left;
+		font-size: 17px;
+		display: inline-block;
+		font-family: fantasy;
+		color: white;
+	}
+
+
+#button {
+	position: static;
+	float: left;
+	font-size: 21px;
+	font-family: fantasy;
+	text-align: center;
+	font-weight: bold;
+	width: 25%; 
+	display:block;
+	padding-bottom: 10px;
+
+
+}
+
+.carousel {
+	padding-left: 3px;
+	padding-right: 3px;
+
+	width: 100%;
+}
+
+.text {
+	font-family: Open Sans;
+	color:black;
+	font-size: 22px;
+}
+
+.card-header {
+	text-align: center;
+	font-size: 35px;
+	font-family: fantasy;
+	color:white;
+	text-decoration: underline;
+	background-color: black;
+}
+
+
+.card-body {
+	background-color: white; 
+	font-family: Open Sans;
+	font-size: 22px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 75px;
+	font-family: fantasy;
+	color: white;
+	font-weight: bold;
+}
+
+
+h2 {
+	text-align: center;
+	font-size: 35px;
+	font-family: fantasy;
+	color: white;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+h3 {
+	text-align: center;
+	font-size: 30px;
+	font-family: fantasy;
+	color:white;
+}
+
+
+h5 {
+	text-align: left;
+	font-size: 30px;
+	font-family: fantasy;
+	color:black;
+	text-decoration: underline;
+}
+
+
+h6 {
+	text-align: left;
+	font-size: 30px;
+	font-family: fantasy;
+	color:black;
+	text-decoration: underline;
+}
+
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+}
+.carousel-indicators .active {
+    
+    background-color: black;
+}
+
+
+
+footer {
+	font-size: 25px;
+	font-family: fantasy;
+	color: black;
+	font-weight: bold;
+	margin-top: 60px;
+	padding-bottom: 10px;
+	position: static;
+   	left: 0;
+   	bottom: 0;
+   	height: 40px;
+   	width: 100%;
+   	text-align: center;
+   
+}
+
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+
+
+
+
+
+
