@@ -1,0 +1,318 @@
+body {
+
+	background-color: black;
+
+}
+
+
+
+.jumbotron {
+	background:
+		radial-gradient(black 15%, transparent 16%) 0 0,
+		radial-gradient(black 15%, transparent 16%) 8px 8px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+		background-color:#282828;
+		background-size:16px 16px;
+
+}
+
+
+
+h1 {
+	text-align: center;
+	font-size: 70px;
+	font-family: fantasy;
+	color: #D3D3D3;
+	font-weight: bold;
+}
+
+h3 {
+	text-align: center;
+	font-size: 40px;
+	font-family: fantasy;
+	color:#D3D3D3;
+}
+
+
+h5 {
+	text-align: left;
+	font-size: 30px;
+	font-family: fantasy;
+	color:black;
+	text-decoration: underline;
+}
+
+
+h6 {
+	text-align: left;
+	font-size: 20px;
+	font-family: fantasy;
+	color:black;
+	text-decoration: underline;
+}
+
+
+.btn  {
+	background: 
+		radial-gradient(black 15%, transparent 16%) 0 0,
+		radial-gradient(black 15%, transparent 16%) 8px 8px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+		background-color:#282828;
+		background-size:16px 16px;
+		float: left;
+		font-size: 16px;
+		display: inline-block;
+		font-family: fantasy;
+		color:#D3D3D3;
+
+
+}
+
+
+#button {
+	width: 12.5%;
+}
+
+
+
+
+.card-header {
+	text-align: center;
+	font-size: 35px;
+	font-family: fantasy;
+	color:#D3D3D3;
+	text-decoration: underline;
+	background:
+		radial-gradient(black 15%, transparent 16%) 0 0,
+		radial-gradient(black 15%, transparent 16%) 8px 8px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+		background-color:#282828;
+		background-size:16px 16px;
+	
+}
+
+
+
+
+
+
+.card-body {
+	background-color: #D3D3D3; 
+	font-family: Georgia, serif;
+	font-size: 16px;
+}
+
+
+
+.card-image1 {
+	padding-right: 40%;
+	padding-left: 40%;
+	height: 200px;
+	width: 100%;
+	text-align:  center;
+}
+
+.text {
+	font-family: Georgia, serif;
+	color:black;
+	font-size: 16px;
+}
+
+
+
+
+
+
+footer {
+	font-size: 18px;
+	font-family: fantasy;
+	color: #D3D3D3;
+	font-weight: bold;
+	margin-top: 60px;
+	padding-bottom: 10px;
+	position: static;
+   	left: 0;
+   	bottom: 0;
+   	height: 40px;
+   	width: 100%;
+   	text-align: center;
+}
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+   
+
+.btn  {
+	background: 
+		radial-gradient(black 15%, transparent 16%) 0 0,
+		radial-gradient(black 15%, transparent 16%) 8px 8px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+		background-color:#282828;
+		background-size:16px 16px;
+		float: left;
+		font-size: 17px;
+		display: inline-block;
+		font-family: fantasy;
+		color:#D3D3D3;
+	}
+
+#button {
+	position: static;
+	float: left;
+	font-size: 21px;
+	font-family: fantasy;
+	text-align: center;
+	font-weight: bold;
+	width: 25%; 
+	display:block;
+	padding-bottom: 10px;
+
+
+}
+
+
+.carousel {
+	padding-left: 3px;
+	padding-right: 3px;
+
+	width: 100%;
+}
+
+.text {
+	font-family: Open Sans;
+	color:black;
+	font-size: 22px;
+}
+
+
+.card-header {
+	text-align: center;
+	font-size: 35px;
+	font-family: fantasy;
+	color:#D3D3D3;
+	text-decoration: underline;
+	background:
+		radial-gradient(black 15%, transparent 16%) 0 0,
+		radial-gradient(black 15%, transparent 16%) 8px 8px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+		background-color:#282828;
+		background-size:16px 16px;
+	
+}
+
+
+
+.card-body {
+	background-color: #D3D3D3; 
+	font-family: Open Sans;
+	font-size: 22px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 65px;
+	font-family: fantasy;
+	color: #D3D3D3;
+	font-weight: bold;
+}
+
+h3 {
+	text-align: center;
+	font-size: 30px;
+	font-family: fantasy;
+	color:#D3D3D3;
+}
+
+
+h5 {
+	text-align: left;
+	font-size: 30px;
+	font-family: fantasy;
+	color:black;
+	text-decoration: underline;
+}
+
+
+h6 {
+	text-align: left;
+	font-size: 30px;
+	font-family: fantasy;
+	color:black;
+	text-decoration: underline;
+}
+
+
+
+
+ul li{
+
+ font-size: 20px;
+
+}
+
+
+
+
+
+.card-image1 {
+	padding-right: 35%;
+	padding-left: 35%;
+	height: 170px;
+	width: 100%;
+	text-align:  center;
+}
+
+
+
+
+
+
+
+
+footer {
+	font-size: 25px;
+	font-family: fantasy;
+	color: #D3D3D3;
+	font-weight: bold;
+	margin-top: 60px;
+	padding-bottom: 10px;
+	position: static;
+   	left: 0;
+   	bottom: 0;
+   	height: 40px;
+   	width: 100%;
+   	text-align: center;
+}
+
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+
+
+
+
+
+
