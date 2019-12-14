@@ -175,7 +175,7 @@ background-color: black;
 		background-color:#282828;
 		background-size:16px 16px;
 		float: left;
-		font-size: 17px;
+		font-size: 22px;
 		display: inline-block;
 		font-family: Open Sans;
 		color:#D3D3D3;
@@ -184,7 +184,7 @@ background-color: black;
 #button {
 	position: static;
 	float: left;
-	font-size: 21px;
+	font-size: 22px;
 	font-family: Open Sans;
 	text-align: center;
 	font-weight: bold;
@@ -201,13 +201,13 @@ background-color: black;
 .text {
 	font-family: Open Sans;
 	color:black;
-	font-size: 22px;
+	font-size: 24px;
 }
 
 
 .card-header {
 	text-align: center;
-	font-size: 35px;
+	font-size: 38px;
 	font-family: Open Sans;
 	color:#D3D3D3;
 	text-decoration: underline;
@@ -226,7 +226,7 @@ background-color: black;
 .card-body {
 	background-color: #D3D3D3; 
 	font-family: Open Sans;
-	font-size: 22px;
+	font-size: 24px;
 }
 
 h1 {
