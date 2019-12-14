@@ -1,6 +1,6 @@
 body {
 
-	background:
+       background:
        radial-gradient(circle farthest-side at 0% 50%,#fb1 23.5%,rgba(240,166,17,0) 0)21px 30px,
        radial-gradient(circle farthest-side at 0% 50%,#B71 24%,rgba(240,166,17,0) 0)19px 30px,
        linear-gradient(#fb1 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,#fb1 0)0 0,
@@ -285,7 +285,7 @@ footer {
 	
 body {
 
-	background:
+       background:
        radial-gradient(circle farthest-side at 0% 50%,#fb1 23.5%,rgba(240,166,17,0) 0)21px 30px,
        radial-gradient(circle farthest-side at 0% 50%,#B71 24%,rgba(240,166,17,0) 0)19px 30px,
        linear-gradient(#fb1 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,#fb1 0)0 0,
@@ -315,7 +315,7 @@ body {
 h1 {
 	text-align: center;
 	font-size: 75px;
-	font-family: fantasy;
+	font-family: Open Sans;
 	color: #DAA520;
 	font-weight: bold;
 	text-shadow:
@@ -329,7 +329,7 @@ h1 {
 h2 {
 	text-align: center;
 	font-size: 35px;
-	font-family: fantasy;
+	font-family: Open Sans;
 	color: #DAA520;
 	font-weight: bold;
 	text-shadow:
@@ -343,7 +343,7 @@ h2 {
 h3 {
 	text-align: center;
 	font-size: 30px;
-	font-family: fantasy;
+	font-family: Open Sans;
 	color: #DAA520;
 	font-weight: bold;
 	text-shadow:
@@ -359,7 +359,7 @@ h3 {
 h4 {
 	text-align: left;
 	font-size: 30px;
-	font-family: fantasy;
+	font-family: Open Sans;
 	color: #8B4513;
 	text-decoration: underline;
 	font-weight: bold;
@@ -374,7 +374,7 @@ h4 {
 h5 {
 	text-align: left;
 	font-size: 30px;
-	font-family: fantasy;
+	font-family: Open Sans;
 	color: #8B4513;
 	text-decoration: underline;
 	text-shadow:
@@ -388,7 +388,7 @@ h5 {
 h6 {
 	text-align: left;
 	font-size: 30px;
-	font-family: fantasy;
+	font-family: Open Sans;
 	color: #8B4513;
 	text-decoration: underline;
 	text-shadow:
@@ -404,9 +404,9 @@ h6 {
 	
 
 		float: left;
-		font-size: 17px;
+		font-size: 22px;
 		display: inline-block;
-		font-family: fantasy;
+		font-family: Open Sans;
 		color: #DAA520;
 		background-color: #8B4513;
 		text-align: center;
@@ -418,8 +418,8 @@ h6 {
 #button {
 	position: static;
 	float: left;
-	font-size: 21px;
-	font-family: fantasy;
+	font-size: 22px;
+	font-family: Open Sans;
 	text-align: center;
 	font-weight: bold;
 	width: 25%; 
@@ -435,8 +435,8 @@ h6 {
 
 .card-header {
 	text-align: center;
-	font-size: 35px;
-	font-family: fantasy;
+	font-size: 38px;
+	font-family: Open Sans;
 	color: #DAA520;
 	text-decoration: underline;
 	background-color: #8B4513;
@@ -452,7 +452,7 @@ h6 {
 .card-body {
 	background-color: white; 
 	font-family: Open Sans;
-	font-size: 22px;
+	font-size: 24px;
 	color: #8B4513;
 }
 
@@ -550,7 +550,7 @@ h6 {
 .text {
 	font-family: Open Sans;
 	color: black;
-	font-size: 22px;
+	font-size: 24px;
 }
 
 
