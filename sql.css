@@ -297,7 +297,40 @@ footer {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	
+	
+body {
 
+	background: 
+	url("mysql2.jpg") bottom right no-repeat,
+	linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
+	radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
+	radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #48B;
+	background-size: 110px 200px;
+	background-repeat: repeat-x;
+	
+	
+	
+
+
+}
+
+
+
+.jumbotron {
+
+	background: 
+
+	linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
+	radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
+	radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #48B;
+	background-size: 110px 200px;
+	background-repeat: repeat-x;
+
+	
+
+
+}
 
 
 
