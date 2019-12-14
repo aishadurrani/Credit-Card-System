@@ -231,9 +231,9 @@ body {
 .btn  {
 		background-color: black;
 		float: left;
-		font-size: 17px;
+		font-size: 22px;
 		display: inline-block;
-		font-family: fantasy;
+		font-family: Open Sans;
 		color: white;
 	}
 
@@ -241,8 +241,8 @@ body {
 #button {
 	position: static;
 	float: left;
-	font-size: 21px;
-	font-family: fantasy;
+	font-size: 22px;
+	font-family: Open Sans;
 	text-align: center;
 	font-weight: bold;
 	width: 25%; 
@@ -262,13 +262,13 @@ body {
 .text {
 	font-family: Open Sans;
 	color:black;
-	font-size: 22px;
+	font-size: 24px;
 }
 
 .card-header {
 	text-align: center;
-	font-size: 35px;
-	font-family: fantasy;
+	font-size: 38px;
+	font-family: Open Sans;
 	color:white;
 	text-decoration: underline;
 	background-color: black;
@@ -278,13 +278,13 @@ body {
 .card-body {
 	background-color: white; 
 	font-family: Open Sans;
-	font-size: 22px;
+	font-size: 24px;
 }
 
 h1 {
 	text-align: center;
 	font-size: 75px;
-	font-family: fantasy;
+	font-family: Open Sans;
 	color: white;
 	font-weight: bold;
 }
@@ -293,7 +293,7 @@ h1 {
 h2 {
 	text-align: center;
 	font-size: 35px;
-	font-family: fantasy;
+	font-family: Open Sans;
 	color: white;
 	font-weight: bold;
 	text-shadow:
@@ -306,7 +306,7 @@ h2 {
 h3 {
 	text-align: center;
 	font-size: 30px;
-	font-family: fantasy;
+	font-family: Open Sans;
 	color:white;
 }
 
@@ -314,7 +314,7 @@ h3 {
 h5 {
 	text-align: left;
 	font-size: 30px;
-	font-family: fantasy;
+	font-family: Open Sans;
 	color:black;
 	text-decoration: underline;
 }
@@ -323,7 +323,7 @@ h5 {
 h6 {
 	text-align: left;
 	font-size: 30px;
-	font-family: fantasy;
+	font-family: Open Sans;
 	color:black;
 	text-decoration: underline;
 }
