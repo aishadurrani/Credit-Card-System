@@ -177,7 +177,7 @@ background-color: black;
 		float: left;
 		font-size: 17px;
 		display: inline-block;
-		font-family: fantasy;
+		font-family: Open Sans;
 		color:#D3D3D3;
 	}
 
@@ -185,7 +185,7 @@ background-color: black;
 	position: static;
 	float: left;
 	font-size: 21px;
-	font-family: fantasy;
+	font-family: Open Sans;
 	text-align: center;
 	font-weight: bold;
 	width: 25%; 
@@ -208,7 +208,7 @@ background-color: black;
 .card-header {
 	text-align: center;
 	font-size: 35px;
-	font-family: fantasy;
+	font-family: Open Sans;
 	color:#D3D3D3;
 	text-decoration: underline;
 	background:
@@ -232,7 +232,7 @@ background-color: black;
 h1 {
 	text-align: center;
 	font-size: 65px;
-	font-family: fantasy;
+	font-family: Open Sans;
 	color: #D3D3D3;
 	font-weight: bold;
 }
@@ -240,7 +240,7 @@ h1 {
 h3 {
 	text-align: center;
 	font-size: 30px;
-	font-family: fantasy;
+	font-family: Open Sans;
 	color:#D3D3D3;
 }
 
@@ -248,7 +248,7 @@ h3 {
 h5 {
 	text-align: left;
 	font-size: 30px;
-	font-family: fantasy;
+	font-family: Open Sans;
 	color:black;
 	text-decoration: underline;
 }
@@ -257,7 +257,7 @@ h5 {
 h6 {
 	text-align: left;
 	font-size: 30px;
-	font-family: fantasy;
+	font-family: Open Sans;
 	color:black;
 	text-decoration: underline;
 }
