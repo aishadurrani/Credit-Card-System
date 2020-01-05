@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="sql.css">
+
+	
+	
+	<title>RDBMS - SQL</title>
+
+</head>
+
+<header>
+
+	<div class="header">
+		<div class="container">
+			<div class="jumbotron">
+
+	 			<h1><strong>RDBMS</strong></h1>
+	 			<h3>SQL - Structured Query Language</h3>
+
+			</div>
+		
+
+			
+			<nav>
+				
+					<a href="index.html"><button id="button" type="button" class="btn btn-secondary">Home</button></a>
+
+
+          <a href="method.html"><button id="button" type="button" class="btn btn-secondary">Method</button></a>
+
+
+          <a href="sql.html"><button id="button" type="button" class="btn btn-secondary">RDBMS - SQL</button></a>
+              
+          
+          
+          <a href="java.html"><button id="button" type="button" class="btn btn-secondary">Java</button></a>
+              
+        
+
+          <a href="hive.html"><button id="button" type="button" class="btn btn-secondary">Hive</button></a>
+              
+        
+
+          <a href="sqoop.html"><button id="button" type="button" class="btn btn-secondary">Sqoop</button></a>
+
+        
+
+          <a href="oozie.html"><button id="button" type="button" class="btn btn-secondary">Oozie</button></a>
+
+
+          <a href="datavisual.html"><button id="button" type="button" class="btn btn-secondary">Visualization</button></a>
+        
+				
+				
+			</nav>
+		</div>
+	 </div> 
+
+
+	</header>
+
+
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+	
+	<body>
+				
+
+
+			<div class="container">
+			
+			<div class="card">
+  				<h2 class="card-header">Operational Database</h2>
+  					<div class="card-body">
+
+  					<p class="text"><h4><strong>MYSQL</strong></h4>
+
+  						<br>
+
+              <p class="text">MySQL is a relational database management system based on SQL – Structured Query Language. The application is used for a wide range of purposes, including data warehousing, e-commerce, and logging applications. The most common use for mySQL however, is for the purpose of a web database.
+              </p>
+
+              <br>
+              <br>
+
+  					<h4><strong>< Part One ></strong></h4></p>
+
+  					<br>
+
+    			
+   					 <p class="text">The very first phase in creating our virtual banking system is to generate a set of queries for both Transactional Details and Customer Details from the database provided.</p>
+   					 <br>
+   					 <p class="text">These queries help us extract data targeted to a particular zip code, transaction type or for a given branch in a particular state.</p>
+
+   					 <br>
+   					 <br>
+             <br>
+
+             <p class="text"><h4><strong>Queries Generated for Java in MYSQL</strong></h4></p>
+
+             <br>
+             <br>
+             <br>
+
+   					 <p class="text"><h5><strong>Transaction Details</strong></h5></p>
+
+   					 <br>
+   					 <br>
+
+   					 <p class="text">1. Display the transactions made by customers living in a given zip code for a given month and year. Order by day in descending order.</p>
+
+   					 <br>
+
+   					 <p class="text">
+
+   					 	<img class="card-image1" src="q1.png" alt="query 1">
+
+   					 </p>
+
+   					 <br>
+   					 <br>
+
+
+					<p class="text">2. Display the number and total values of transactions for a given type.</p>
+
+					<br>
+
+
+   					 <p class="text">
+
+   					 	<img class="card-image2" src="q2.png" alt="query 1">
+
+   					 </p>
+
+   					 <br>
+   					 <br>
+
+   					 <p class="text">3. Display the number and total values of transactions for branches in a given state.</p>
+
+					<br>
+
+
+   					 <p class="text">
+
+   					 	<img class="card-image3" src="q3.png" alt="query 1">
+
+   					 </p>
+
+
+   					 <br>
+   					 <br>
+
+            <p class="text"><h5><strong>Customer Details</strong></h5></p>
+
+            <br>
+            <br>
+
+
+
+					<p class="text">4. Check existing account details for a customer.</p>
+
+					<br>
+
+
+   					 <p class="text">
+
+   					 	<img class="card-image4" src="q4.png" alt="query 1">
+
+   					 </p>
+
+   					 <br>
+   					 <br>
+
+   					 <p class="text">5. Modify the existing account details of a customer.</p>
+
+					<br>
+
+
+   					 <p class="text">
+
+   					 	<img class="card-image5" src="q5.png" alt="query 1">
+
+   					 </p>
+
+   					 <br>
+   					 <br>
+
+   					 <p class="text">6. Generate monthly bill for a credit card number for a given month and year.</p>
+
+					<br>
+
+
+   					 <p class="text">
+
+   					 	<img class="card-image6" src="q6.png" alt="query 1">
+
+   					 </p>
+
+   					 <br>
+   					 <br>
+
+   					 <p class="text">7. Display the transactions made by a customer between two dates. Order by year, month, and day in descending order.</p>
+
+					<br>
+
+
+   					 <p class="text">
+
+   					 	<img class="card-image7" src="q7.png" alt="query 1">
+
+   					 </p>
+
+   					 <br>
+   					 <br>
+
+
+   					 <h4><strong>< /Part One End ></strong></h4></p>
+
+
+   					 <br>
+   					 <br>
+             <br>
+
+
+
+
+					 <p class="text">After generating these 7 queries we move to Java.</p>
+
+   					 <br>
+   					 <br>
+   					 <br>
+            
+
+
+
+
+   					 <p class="text"><h4><strong>Queries Generated for Sqoop in MYSQL</strong></h4></p>
+
+   					 <br>
+
+             <p class="text">Once again we use MySQL to generate queries for our Data Extraction and Transformation process.</p>
+             <br>
+             <p class="text">The following queries are used in Sqoop for Data Extraction and Transportation - ETL.  The specifications for these queries are found as a mapping example for Customer below</p>
+             <br>
+             <br>
+
+   					 <p class="text"><h4><strong>< Part Two ></strong></h4></p>
+
+   					 <br>
+             <br>
+             <br>
+
+             <p class="text"><h5>Branch</h5></p>
+
+             <br>
+
+             <p class="text">
+
+              <img class="card-image8" src="q8.png" alt="query 8">
+
+             </p>
+
+             <br>
+             <br>
+
+
+            <p class="text"><h5>Credit Card</h5></p>
+
+            <br>
+
+
+             <p class="text">
+
+                 <img class="card-image9" src="q9.png" alt="query 9">
+
+             </p>
+
+             <br>
+             <br>
+
+             <p class="text"><h5>Time</h5></p>
+
+             <br>
+
+
+             <p class="text">
+
+                 <img class="card-image10" src="q10.png" alt="query 10">
+
+             </p>
+
+
+             <br>
+             <br>
+
+
+             <p class="text"><h5>Customer</h5></p>
+
+             <br>
+
+
+             <p class="text">
+
+                 <img class="card-image11" src="q11.png" alt="query 11">
+
+             </p>
+
+             <br>
+             <br>
+
+
+             <p class="text">
+
+              <img class="card-image12" src="map.png" alt="mapping">
+
+             </p>
+
+             <br>
+             <br>
+
+             <p class="text"><h4><strong>< /Part Two ></strong></h4></p>
+>
+             <br>
+             <br>
+             <br>
+             <br>
+
+
+             <p class="text"><h4><strong>Queries Generated for Visualization in MYSQL</strong></h4></p>
+
+             <br>
+             <br>
+
+             <p class="text"><h4><strong>< Part Three ></strong></h4></p>
+
+             <br>
+
+             <p class="text">Hive Visualization queries in MySQL.</p>
+
+             <br>
+             <br>
+
+             <p class="text"><h5>Query One</h5></p>
+
+             <br>
+
+             <p class="text">1. The top 20 zip codes by total transaction value.
+             </p>
+
+              <br>
+              <br>
+
+
+
+              <p class="text">
+
+              <img class="card-image13" src="hivequery1.png" alt="hive 1">
+
+              </p>
+
+
+              <br>
+              <br>
+              <br>
+              <br>
+
+
+              <p class="text"><h5>Query Two</h5></p>
+
+              <br>
+              
+
+              <p class="text">2. Total transaction value for each transaction type by Quarter in 2018.
+              </p>
+
+              <br>
+              <br>
+
+
+
+              <p class="text">
+
+              <img class="card-image14" src="hivequery2.png" alt="hive 2">
+
+              </p>
+
+              <br>
+              <br>
+
+              <p class="text"><h4><strong>< /Part Three ></strong></h4></p>
+
+              <br>
+              <br>
+
+
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target= "#modal1">Click to view EER Diagram</button>
+
+              <div id="modal1" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                       <div class="modal-content">
+                        <div class ="modal-header"><h4 class='col-12 modal-title text-center'>EER Diagram</h4></div>
+                          <div class ="modal-body">
+
+
+
+                       
+
+                          <img class="card-image16" src="eer.png" alt="EER Diagram">
+
+
+
+      
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+              <br>
+              <br> 
+              <br>
+              <br>
+              <br>
+              <br>
+
+
+
+              <p class="text">
+
+              <img class="card-image15" src="mysql1.png" alt="mysql">
+
+              </p>
+
+              <br>
+              <br>
+
+
+
+              </div>
+        </div>
+</div>
+
+
+
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
+	
+			
+
+					
+
+
+</body>
+
+
+	<footer>Aisha Durrani - PBPS</footer>
+
+
+
+
+</html>

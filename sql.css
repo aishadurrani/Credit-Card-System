@@ -1,0 +1,607 @@
+body {
+
+	background: 
+	url("mysql2.jpg") bottom right no-repeat,
+	linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
+	radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
+	radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #48B;
+	background-size: 110px 200px;
+	background-repeat: repeat-x;
+	
+	
+	
+
+
+}
+
+
+
+.jumbotron {
+
+	background: 
+
+	linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
+	radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
+	radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #48B;
+	background-size: 110px 200px;
+	background-repeat: repeat-x;
+
+	
+
+
+}
+
+
+
+h1 {
+	text-align: center;
+	font-size: 75px;
+	font-family: fantasy;
+	color: #48B;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+h2 {
+	text-align: center;
+	font-size: 40px;
+	font-family: fantasy;
+	color: white;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+
+h3 {
+	text-align: center;
+	font-size: 35px;
+	font-family: fantasy;
+	color: white;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+h4 {
+	text-align: center;
+	font-size: 30px;
+	font-family: fantasy;
+	color: #48B;
+	text-decoration: underline;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+h5 {
+	text-align: left;
+	font-size: 25px;
+	font-family: fantasy;
+	color:#48B;
+	text-decoration: underline;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+h6 {
+	text-align: left;
+	font-size: 20px;
+	font-family: fantasy;
+	color:#48B;
+	text-decoration: underline;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+
+.btn  {
+	
+
+		float: left;
+		font-size: 16px;
+		display: inline-block;
+		font-family: fantasy;
+		color: #48B;
+		background-color: white;
+		text-align: center;
+		text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+
+
+
+}
+
+
+#button {
+	width: 12.5%;
+}
+
+
+
+
+
+.card-header {
+	text-align: center;
+	font-size: 35px;
+	font-family: fantasy;
+	color: white;
+	text-decoration: underline;
+	background-color: #48B;
+	
+	
+}
+
+
+
+
+
+
+.card-body {
+	background-color: white; 
+	font-family: Georgia, serif;
+	font-size: 16px;
+	color: #48B;
+}
+
+.text {
+	font-family: Georgia, serif;
+	color: black;
+	font-size: 16px;
+}
+
+.card-image1 {
+	height: 118px;
+	width: 100%;
+}
+
+.card-image2 {
+	height: 100px;
+	width: 100%;
+}
+
+.card-image3 {
+	height: 110px;
+	width: 100%;
+	padding-left: 15px;
+}
+
+.card-image4 {
+	height: 110px;
+	width: 100%;
+	padding-left: 15px;
+}
+
+.card-image5 {
+	height: 140px;
+	width: 100%;
+	padding-left: 15px;
+}
+
+.card-image6 {
+	height: 140px;
+	width: 100%;
+	padding-left: 15px;
+}
+
+.card-image7 {
+	height: 150px;
+	width: 100%;
+	padding-left: 15px;
+}
+
+.card-image8 {
+	height: 200px;
+	width: 100%;
+}
+
+.card-image9 {
+	height: 200px;
+	width: 100%;
+}
+
+.card-image10 {
+	height: 200px;
+	width: 100%;
+	padding-left: 15px;
+}
+
+.card-image11 {
+	height: 250px;
+	width: 100%;
+	padding-left: 15px;
+}
+
+.card-image12 {
+	height: 200px;
+	width: 100%;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+
+.card-image13 {
+	height: 190px;
+	width: 100%;
+	padding-left: 15px;
+}
+
+.card-image14 {
+	height: 180px;
+	width: 100%;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.card-image15 {
+
+	float: right;
+    text-align: center;
+    height: 150px;
+    margin: 5px;
+	height: 130px;
+	text-align: center;
+}
+
+.card-image16 {
+
+	width: 100%;
+	height: 100%;
+}
+
+.btn {
+
+	width: 100%;
+	color: white;
+	background-color: #48B;
+
+}
+
+
+footer {
+	font-size: 18px;
+	font-family: fantasy;
+	color: white;
+	font-weight: bold;
+	margin-top: 60px;
+	padding-bottom: 10px;
+	position: static;
+   	left: 0;
+   	bottom: 0;
+   	height: 40px;
+   	width: 100%;
+   	text-align: center;
+   	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+
+
+
+h1 {
+	text-align: center;
+	font-size: 65px;
+	font-family: fantasy;
+	color: #48B;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+h2 {
+	text-align: center;
+	font-size: 35px;
+	font-family: fantasy;
+	color: white;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+
+h3 {
+	text-align: center;
+	font-size: 30px;
+	font-family: fantasy;
+	color: white;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+h4 {
+	text-align: center;
+	font-size: 30px;
+	font-family: fantasy;
+	color: #48B;
+	text-decoration: underline;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+h5 {
+	text-align: left;
+	font-size: 30px;
+	font-family: fantasy;
+	color:#48B;
+	text-decoration: underline;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+h6 {
+	text-align: left;
+	font-size: 30px;
+	font-family: fantasy;
+	color:#48B;
+	text-decoration: underline;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+
+.btn  {
+	
+
+		float: left;
+		font-size: 17px;
+		display: inline-block;
+		font-family: fantasy;
+		color: #48B;
+		background-color: white;
+		text-align: center;
+		text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+
+
+
+}
+
+#button {
+	position: static;
+	float: left;
+	font-size: 21px;
+	font-family: fantasy;
+	text-align: center;
+	font-weight: bold;
+	width: 25%; 
+	display:block;
+	padding-bottom: 10px;
+
+
+}
+
+
+
+
+
+.card-header {
+	text-align: center;
+	font-size: 35px;
+	font-family: fantasy;
+	color: white;
+	text-decoration: underline;
+	background-color: #48B;
+	
+	
+}
+
+
+
+
+
+
+.card-body {
+	background-color: white; 
+	font-family: Open Sans;
+	font-size: 22px;
+	color: #48B;
+}
+
+.text {
+	font-family: Open Sans;
+	color: black;
+	font-size: 22px;
+}
+
+.card-image1 {
+	height: 118px;
+	width: 100%;
+}
+
+.card-image2 {
+	height: 100px;
+	width: 100%;
+}
+
+.card-image3 {
+	height: 110px;
+	width: 100%;
+	padding-left: 15px;
+}
+
+.card-image4 {
+	height: 110px;
+	width: 100%;
+	padding-left: 15px;
+}
+
+.card-image5 {
+	height: 140px;
+	width: 100%;
+	padding-left: 15px;
+}
+
+.card-image6 {
+	height: 140px;
+	width: 100%;
+	padding-left: 15px;
+}
+
+.card-image7 {
+	height: 150px;
+	width: 100%;
+	padding-left: 15px;
+}
+
+.card-image8 {
+	height: 200px;
+	width: 100%;
+}
+
+.card-image9 {
+	height: 200px;
+	width: 100%;
+}
+
+.card-image10 {
+	height: 200px;
+	width: 100%;
+	padding-left: 15px;
+}
+
+.card-image11 {
+	height: 250px;
+	width: 100%;
+	padding-left: 5px;
+}
+
+.card-image12 {
+	height: 230px;
+	width: 100%;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+
+.card-image13 {
+	height: 190px;
+	width: 100%;
+	padding-left: 15px;
+}
+
+.card-image14 {
+	height: 180px;
+	width: 100%;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.card-image15 {
+
+	float: right;
+    text-align: center;
+    height: 150px;
+    margin: 5px;
+	height: 130px;
+	text-align: center;
+}
+
+
+
+
+footer {
+	font-size: 25px;
+	font-family: fantasy;
+	color: white;
+	font-weight: bold;
+	margin-top: 60px;
+	padding-bottom: 10px;
+	position: static;
+   	left: 0;
+   	bottom: 0;
+   	height: 40px;
+   	width: 100%;
+   	text-align: center;
+   	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+   
+
+
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+
